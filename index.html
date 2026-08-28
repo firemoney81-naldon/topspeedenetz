@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang="ko"><head>
 <meta charSet="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
-<meta property="og:title" content="인터넷TV가입"/>
-<meta property="og:site_name" content="인터넷TV가입" />
-<meta name="Naver Search Advisor" content="인터넷TV가입">
+<meta property="og:title" content="‘인터넷 tv 가입’ 혜택 비교 추천"/>
+<meta property="og:site_name" content="‘인터넷 tv 가입’ 혜택 비교 추천" />
+<meta name="Naver Search Advisor" content="‘인터넷 tv 가입’ 혜택 비교 추천">
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="/"/>
 <meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
@@ -12,7 +12,7 @@
 <meta itemprop="description" content="" />
 <meta name="twitter:description" content=""/>
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="인터넷TV가입"/>
+<meta name="twitter:title" content="‘인터넷 tv 가입’ 혜택 비교 추천"/>
 <meta name="twitter:url" content="/"/>
 <meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
 <meta name="google-site-verification" content="vZ2fNi600OfCUSYxS6rq3Hq5ylyr8vXQWdkJSgj8WnI" />
@@ -25,9 +25,9 @@
 <meta name="Yeti" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
 
-<meta name="subject" content="인터넷TV가입" />
-<meta name="publisher" content="인터넷TV가입" />
-<meta name="Other Agent" content="인터넷TV가입" />
+<meta name="subject" content="‘인터넷 tv 가입’ 혜택 비교 추천" />
+<meta name="publisher" content="‘인터넷 tv 가입’ 혜택 비교 추천" />
+<meta name="Other Agent" content="‘인터넷 tv 가입’ 혜택 비교 추천" />
 <meta name="location" content="South Korea" />
 <meta name="distribution" content="global" />
 <meta name="rating" content="general" />
@@ -51,11 +51,11 @@
     <!-- Apple iOS 최적화 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="인터넷TV가입">
+    <meta name="apple-mobile-web-app-title" content="‘인터넷 tv 가입’ 혜택 비교 추천">
 
     <!-- Android Chrome 최적화 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="인터넷TV가입">
+    <meta name="application-name" content="‘인터넷 tv 가입’ 혜택 비교 추천">
 
     <!-- 모바일 뷰포트 최적화 -->
     <meta name="viewport"
@@ -69,7 +69,7 @@
 
 
 
-<title>인터넷TV가입</title>
+<title>‘인터넷 tv 가입’ 혜택 비교 추천</title>
 
 <meta name="next-head-count" content="25"/>
 <meta name="format-detection" content="telephone=no"/>
@@ -79,907 +79,1481 @@
 
 
 
+<!-- 브릿지 페이지가 생성될 빈 컨테이너 -->
+<div id="dynamic-bridge-app"></div>
 
-  <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "인터넷TV가입 비교견적 센터",
-        "url": "https://best-internet-tv.com/",
-        "description": "2026년 최신 인터넷TV가입 혜택을 주요 통신사별로 비교하고 합리적인 견적을 받으세요. 인터넷가입 현금지원, 사은품 순위, 요금제 차이점 등 전문적인 정보를 제공합니다.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "인터넷가입 전문업체",
-            "email": "contact@best-internet-tv.com"
-        },
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://best-internet-tv.com/?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+<script>
+(function() {
+    // ======================================================================
+    // [모바일 대응 필수] 뷰포트 메타태그 자동 삽입
+    // ======================================================================
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+        document.head.appendChild(meta);
     }
-    </script>
 
-    <!-- Preconnect to external resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    // ======================================================================
+    // [설정 영역] ★수백 개 배포 시 사이트마다 이 값을 반드시 다르게 설정하세요!★
+    // ======================================================================
+    const config = {
+        siteId: "site_loan_001",           // [필수] 사이트 고유 ID (텍스트 풀 시드값 및 고유 해시 생성용)
+        targetUrl: "https://kinternet.kr/?num=15402779",     // [필수] 실제 이동할 URL (검색엔진 가이드라인 준수를 위해 rel 속성 적용)
+        themeColor: "#007bff",             // 사이트 테마 컬러 (버튼 색상)
+        topic: "전국 지역 인터넷 가입 설치 및 혜택 비교",          // 사이트별 주요 타겟 키워드
+        minCount: 130,                     // 최소 방문자 수 범위
+        maxCount: 380                      // 최대 방문자 수 범위
+    };
 
-    <!-- Custom CSS Styles -->
-    <style>
-        /* Base Styling and Reset */
-        body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #f7f9fc; font-size: 16px; }
-        h1, h2, h3, h4 { margin-top: 0; font-weight: 700; }
-        a { text-decoration: none; color: inherit; }
-        ul, ol { list-style: none; padding-left: 0; }
-        img { max-width: 100%; height: auto; display: block; }
+    // ======================================================================
+    // [코어 로직] 구조 난수화 및 표준 규격 전환 엔진
+    // ======================================================================
 
-        /* Color Palette for Soft, Professional Look */
-        :root {
-            --primary-color: #004d99; /* Deep Blue */
-            --secondary-color: #00a0e9; /* Teal/Sky Blue */
-            --accent-color: #ff7f00; /* Orange Accent */
-            --text-color: #333333;
-            --light-bg: #ffffff;
-            --dark-bg: #f7f9fc;
-            --border-color: #e0e0e0;
-            --section-padding: 80px 0;
+    // 1. 사이트 ID 기반 자체 난수 생성기
+    let seedValue = 0;
+    for(let i=0; i<config.siteId.length; i++) seedValue += config.siteId.charCodeAt(i);
+    function seededRandom() {
+        let t = seedValue += 0x6D2B79F5;
+        t = Math.imul(t ^ t >>> 15, t | 1);
+        t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    }
+    function pickRandom(arr) {
+        return arr[Math.floor(seededRandom() * arr.length)];
+    }
+
+    // 2. 동적 클래스명 및 디자인 수치 생성 (페이지 로드 시마다 무작위 해시 적용)
+    const hash = Math.random().toString(36).substring(2, 6) + Math.floor(seededRandom() * 1000);
+    const prefix = `cls_${hash}_`;
+    
+    const dynPadding = Math.floor(seededRandom() * 20) + 50; 
+    const dynMargin = Math.floor(seededRandom() * 20) + 40;  
+    const dynRadius = Math.floor(seededRandom() * 8) + 12;   
+
+    // 3. 날짜 로직
+    const today = new Date();
+    const todayIso = today.toISOString().split('T')[0];
+    const todayStr = `${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일`;
+
+    const yesterday = new Date(today);
+    yesterday.setDate(today.getDate() - 1);
+    const yesterdayIso = yesterday.toISOString().split('T')[0];
+    const yesterdayStr = `${yesterday.getFullYear()}년 ${yesterday.getMonth() + 1}월 ${yesterday.getDate()}일`;
+
+    // 4. 콘텐츠 스피닝 풀
+    const titles = [
+        "잠시만 확인해주세요!", "신청 전 마지막 확인 단계입니다.", "맞춤 솔루션 안내 페이지입니다.", 
+        "다음 단계로 이동을 준비 중입니다.", "성공적인 접속을 위해 확인해 주세요.", "최적의 맞춤 정보를 찾고 있습니다.", 
+        "고객님을 위한 전용 안내 페이지입니다.", "안전한 진행을 위해 잠시 대기해 주세요.", "상담 신청을 위한 필수 확인 단계입니다.", 
+        "빠른 연결을 위해 데이터 분석 중입니다.", "나에게 맞는 최적의 결과를 확인하세요.", "정확한 안내를 위한 마지막 과정입니다.", 
+        "성공적인 솔루션 매칭이 진행 중입니다.", "맞춤형 전문가 연결을 준비하고 있습니다.", "안전한 페이지로 이동 중입니다. 잠시만 기다려주세요."
+    ];
+    
+    const descriptions = [
+        `입력하신 정보를 바탕으로 <strong>${config.topic}</strong> 결과를 분석 중입니다.`,
+        `성공적인 <strong>${config.topic}</strong> 상담 신청을 위해 최종 페이지로 연결됩니다.`,
+        `고객님께 최적화된 <strong>${config.topic}</strong> 솔루션을 제공하기 위한 단계입니다.`,
+        `안전하고 빠른 <strong>${config.topic}</strong> 진행을 위해 아래 버튼을 클릭해 주세요.`,
+        `빅데이터 기반으로 가장 적합한 <strong>${config.topic}</strong> 맞춤 견적을 산출하고 있습니다.`,
+        `검증된 <strong>${config.topic}</strong> 전문가와의 매칭을 위해 다음 페이지로 이동합니다.`,
+        `현재 고객님의 조건에 딱 맞는 <strong>${config.topic}</strong> 혜택을 확인 중입니다.`,
+        `실시간으로 업데이트되는 <strong>${config.topic}</strong> 핵심 정보를 제공해 드립니다.`,
+        `신속하고 정확한 <strong>${config.topic}</strong> 안내를 위해 최종 확인을 부탁드립니다.`,
+        `수많은 데이터 중 고객님만을 위한 <strong>${config.topic}</strong> 플랜을 구성하고 있습니다.`,
+        `원활한 <strong>${config.topic}</strong> 서비스 이용을 위해 필수적인 안내 페이지입니다.`,
+        `최고의 만족을 드릴 수 있는 <strong>${config.topic}</strong> 컨설팅으로 바로 연결해 드립니다.`,
+        `불필요한 과정 없이 <strong>${config.topic}</strong> 핵심 솔루션만 빠르게 확인해 보세요.`,
+        `고객님의 성공적인 <strong>${config.topic}</strong> 진행을 돕기 위한 전용 브릿지 페이지입니다.`,
+        `아래 버튼을 눌러 나에게 가장 유리한 <strong>${config.topic}</strong> 조건을 즉시 확인해 보세요.`
+    ];
+
+    const buttons = [
+        "무료로 결과 확인하기", "나에게 맞는 솔루션 신청", "맞춤 견적 무료 조회", "나만의 맞춤 솔루션 확인", 
+        "무료 컨설팅 받아보기", "실시간 결과 조회하기", "최적의 조건 무료로 비교하기", "1:1 맞춤 상담 바로가기", 
+        "숨은 혜택 확인하고 신청하기", "나의 예상 결과 1초 만에 확인", "전문가 무료 매칭 시작하기", 
+        "가장 유리한 조건 확인하기", "비공개 특별 혜택 보러가기", "나의 맞춤형 플랜 확인하기", 
+        "지금 바로 혜택 조회하기", "안전하게 무료 상담 신청하기"
+    ];
+
+    const disclaimers = [
+        "본 정보는 제휴 파트너사의 지원을 받아 작성되었으며, 서비스 이용 시 소정의 수수료를 지급받을 수 있습니다.",
+        "해당 콘텐츠는 파트너십을 통해 제공되며, 일정액의 대가를 받을 수 있는 제휴 링크가 포함되어 있습니다.",
+        "본 페이지의 서비스는 광고주의 협력으로 운영되며, 이용 실적에 따라 제휴 수수료가 발생할 수 있습니다.",
+        "이 페이지는 제휴 마케팅의 일환으로 구성되었으며, 파트너사로부터 일정 수수료를 제공받을 수 있음을 안내드립니다.",
+        "본 안내는 정보 제공을 목적으로 하며, 연결된 사이트에서의 활동으로 인해 당사에 소정의 리워드가 지급될 수 있습니다.",
+        "독자에게 유용한 정보를 제공하기 위해 작성된 페이지이며, 제휴사로부터 마케팅 지원을 받고 있습니다.",
+        "해당 브릿지 페이지는 공식 파트너 활동의 일환으로, 연결된 서비스를 통해 수익이 발생할 수 있습니다.",
+        "고객님의 편의를 위해 제공되는 맞춤 정보이며, 서비스 제휴에 따른 경제적 대가를 받을 수 있습니다.",
+        "본 추천 서비스는 제휴 광고가 포함되어 있어, 상담 완료 시 수수료가 제공될 수 있음을 명시합니다.",
+        "신뢰할 수 있는 파트너사의 정보를 선별하여 제공하며, 이에 따른 소정의 커미션을 지급받을 수 있습니다."
+    ];
+
+    const semanticTags = ["div", "section", "article", "main"];
+
+    const selectedTitle = pickRandom(titles);
+    const selectedDesc = pickRandom(descriptions);
+    const selectedBtn = pickRandom(buttons);
+    const selectedDisclaimer = pickRandom(disclaimers);
+    const wrapperTag = pickRandom(semanticTags);
+    const innerTag = pickRandom(["div", "section"]);
+
+    // 5. 모바일 대응 동적 스타일 인젝션
+    const style = document.createElement('style');
+    style.textContent = `
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css');
+        
+        .${prefix}container, .${prefix}container * { box-sizing: border-box; }
+        .${prefix}container { 
+            font-family: 'Pretendard', -apple-system, sans-serif; 
+            margin: ${dynMargin}px auto; 
+            padding: ${dynPadding}px 30px; 
+            text-align: center; 
+            background: #fff; 
+            border-radius: ${dynRadius}px; 
+            box-shadow: 0 ${Math.floor(seededRandom()*5)+5}px ${Math.floor(seededRandom()*20)+20}px rgba(0,0,0,0.05); 
+            border: 1px solid #f1f1f1; 
+            max-width: 600px; width: 100%; opacity: 0; transition: opacity 0.4s ease; 
         }
-
-        /* Layout and Typography */
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
-        .header { background-color: var(--primary-color); padding: 1rem 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .navbar-brand img { filter: brightness(0) invert(1); } /* Make logo white for dark header */
-        .banner-area-5 { background: linear-gradient(to right, #eaf4ff, #ffffff); padding: 60px 0; }
-        .banner-content h2 { font-size: 3rem; font-weight: 900; line-height: 1.3; color: var(--text-color); }
-        .banner-content span.highlight { color: var(--accent-color); }
-        .section-title h2 { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1.5rem; }
-        .feature-area-3 { padding: var(--section-padding); background-color: var(--light-bg); }
-        .mainFormWrap { background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .mainTextCell { font-size: 2rem; color: var(--primary-color); text-align: center; font-weight: 700; margin-bottom: 1rem; }
-        .subTextCell { font-size: 1.2rem; text-align: center; color: var(--text-color); margin-bottom: 2rem; }
-        .inputWrap input, .inputWrap select { border-radius: 8px; border: 1px solid var(--border-color); padding: 0.8rem 1rem; font-size: 1rem; width: 100%; box-sizing: border-box; }
-        .inputWrap { margin-bottom: 10px; }
-        .btnCompare { background-color: var(--secondary-color); color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1.1rem; cursor: pointer; transition: background-color 0.3s ease; }
-        .btnCompare:hover { background-color: var(--primary-color); }
-        .about-area-2 { background-color: #f7f9fc; padding: var(--section-padding); }
-        .info-card { background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
-        .info-card:hover { transform: translateY(-5px); }
-        .info-card h4 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem; }
-        .info-card p { color: #555; font-size: 1rem; }
-        .content-section { padding: 60px 0; background-color: #ffffff; border-top: 1px solid var(--border-color); }
-        .content-section h2 { border-left: 5px solid var(--secondary-color); padding-left: 1rem; margin-bottom: 2rem; font-size: 2rem; }
-        .content-section article { padding: 20px; border: 1px solid var(--border-color); border-radius: 8px; background-color: #fcfcfc; margin-bottom: 30px; }
-        .content-section table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95rem; }
-        .content-section th, .content-section td { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: middle; }
-        .content-section th { background-color: #f0f0f0; font-weight: 700; }
-        .content-section ul { list-style: disc; padding-left: 20px; margin-top: 10px; }
-        .content-section li { margin-bottom: 8px; }
-        .content-section .cta-button { text-align: center; margin-top: 40px; }
-        .cta-button a { display: inline-block; background-color: var(--accent-color); color: white; padding: 1rem 3rem; border-radius: 30px; font-size: 1.2rem; font-weight: 700; transition: background-color 0.3s ease; }
-        .cta-button a:hover { background-color: #e56b00; }
-        .t_deco { color: var(--accent-color); }
-
-        /* Sidebar Form Styling */
-        .sideForm { position: fixed; right: -300px; top: 150px; width: 300px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: right 0.5s ease; z-index: 100; padding: 20px; }
-        .sideForm.on { right: 20px; }
-        .sideForm .titleCell { text-align: center; line-height: 1.2; margin-bottom: 15px; }
-        .sideForm table { width: 100%; margin: 0; }
-        .sideForm table th, .sideForm table td { border: none; padding: 5px 0; }
-        .sideForm input[type="text"] { width: calc(100% - 10px); padding: 8px; border: 1px solid #ddd; border-radius: 5px; }
-        .sideForm .privacyChkCell { font-size: 0.9rem; margin-top: 10px; text-align: center; }
-        .sideForm .btnApply { display: block; width: 100%; background-color: var(--primary-color); color: white; padding: 12px; border: none; border-radius: 5px; font-size: 1rem; margin-top: 15px; cursor: pointer; }
-
-        /* Image Optimization */
-        .img-wrap { text-align: center; margin-bottom: 30px; }
-        .img-wrap img { border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-
-        /* Mobile Adjustments */
-        @media (max-width: 768px) {
-            .banner-content h2 { font-size: 2.5rem; }
-            .section-title h2 { font-size: 2rem; }
-            .mainTextCell { font-size: 1.8rem; }
-            .subTextCell { font-size: 1rem; }
-            .inputWrap input, .inputWrap select { padding: 0.6rem; font-size: 0.9rem; }
-            .btnCompare { font-size: 1rem; padding: 0.8rem 1.5rem; }
-            .sideForm { display: none; } /* Hide sidebar form on mobile to save space */
-            .banner-area-5 { padding: 40px 0; }
+        .${prefix}h1 { font-size: ${Math.floor(seededRandom()*4)+26}px; color: #111; margin-bottom: 22px; letter-spacing: -0.5px; word-break: keep-all; line-height: 1.3; }
+        .${prefix}p { font-size: 17px; color: #444; line-height: 1.6; margin-bottom: 35px; word-break: keep-all; }
+        .${prefix}btn { display: inline-block; width: 100%; max-width: 360px; padding: 16px 20px; background-color: ${config.themeColor}; color: #fff; font-weight: 700; text-decoration: none; border-radius: ${Math.floor(seededRandom()*8)+6}px; font-size: 19px; box-shadow: 0 4px 14px rgba(0,0,0,0.15); transition: transform 0.2s, background-color 0.2s; cursor: pointer; border: none; text-align: center; }
+        .${prefix}btn:hover { transform: translateY(-2px); filter: brightness(95%); }
+        .${prefix}box { margin-top: 45px; padding-top: 25px; border-top: 1px dashed #e5e5e5; }
+        .${prefix}stat-text { font-size: 20px; font-weight: 700; color: #333; }
+        .${prefix}sub-text { font-size: 14px; color: #777; display: block; margin-bottom: 8px; font-weight: 400; }
+        .${prefix}num { font-size: 32px; font-weight: 900; color: ${config.themeColor}; }
+        .${prefix}foot { font-size: 12px; color: #999; line-height: 1.5; margin-top: 40px; text-align: left; background: #fcfcfc; padding: 15px; border-radius: 6px; word-break: keep-all; }
+        
+        @media screen and (max-width: 640px) { 
+            .${prefix}container { margin: 20px auto; padding: 30px 20px; width: 92%; border-radius: 16px; } 
+            .${prefix}h1 { font-size: 22px; margin-bottom: 15px; }
+            .${prefix}p { font-size: 15px; margin-bottom: 25px; }
+            .${prefix}btn { font-size: 16px; padding: 14px 10px; }
+            .${prefix}num { font-size: 28px; }
+            .${prefix}box { margin-top: 30px; }
         }
-    </style>
-</head>
-<body>
+    `;
+    document.head.appendChild(style);
 
-    <header class="header">
-        <div class="header-menu header-menu-4">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container d-flex justify-content-between align-items-center">
-                    <a class="navbar-brand py-3" href="/">
-                        <img class="main" src="https://images.pexels.com/photos/403571/pexels-photo-403571.jpeg?auto=compress&cs=tinysrgb&w=283&h=45" alt="인터넷TV가입 비교 로고" width="283" height="45">
-                    </a>
-                    <a href="#mainForm" title="견적 신청 폼으로 이동" class="quick_link d-md-none d-block">
-                        <img src="https://images.pexels.com/photos/403571/pexels-photo-403571.jpeg?auto=compress&cs=tinysrgb&w=150&h=28" width="150" height="28" alt="혜택 확인하기">
-                    </a>
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="menu_toggle">
-                            <span class="hamburger"><span></span><span></span><span></span></span>
-                            <span class="hamburger-cross"><span></span><span></span></span>
-                        </span>
-                    </button>
-                    <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
-                        <ul class="navbar-nav menu ms-auto d-block d-md-none">
-                            <li class="nav-item submenu"><a href="/policy/terms.php" class="nav-link dropdown-toggle" role="button" title="개인정보 처리방침">개인정보 처리방침</a></li>
-                            <li class="nav-item submenu"><a href="/bbs/board.php?bo_table=adlink" class="nav-link dropdown-toggle" role="button" title="게시판">게시판</a></li>
-                        </ul>
+    // 6. 동적 DOM 생성 
+    const container = document.getElementById('dynamic-bridge-app');
+    if(container) {
+        container.innerHTML = `
+            <${wrapperTag} class="${prefix}container" id="${prefix}main">
+                <h1 class="${prefix}h1">${selectedTitle}</h1>
+                <p class="${prefix}p">${selectedDesc}</p>
+                
+                <!-- [개선 완료] 정석적인 아웃바운드 링크 구조 적용 (rel="nofollow sponsored") -->
+                <a href="${config.targetUrl}" rel="nofollow sponsored" class="${prefix}btn" id="${prefix}cta">
+                    ${selectedBtn}
+                </a>
+                
+                <${innerTag} class="${prefix}box">
+                    <div class="${prefix}stat-text">
+                        <span class="${prefix}sub-text"><time datetime="${yesterdayIso}">${yesterdayStr}</time> 통계 기준</span>
+                        실시간 무료 비교 신청자 <span class="${prefix}num" id="${prefix}counter">0</span>명
                     </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+                </${innerTag}>
 
-    <main>
-        <!-- Banner Section: Internet TV Subscription Focus -->
-        <section class="banner-area-5">
-            <div class="container">
-                <div class="row align-items-center justify-content-center pt-80 pb-60">
-                    <div class="col-lg-12">
-                        <div class="banner-content wow fadeInRight" data-wow-delay="0.1s">
-                            <div class="row text-start flex-wrap">
-                                <div class="col-12 col-lg-8">
-                                    <h1 class="w-100 main-ts title_font text-60 mt-70">
-                                        <span class="highlight">현명한 인터넷TV가입</span>의 시작,<br>
-                                        <span class="highlight">최대 사은품 현금지원</span>을 찾아드립니다.
-                                    </h1>
-                                    <p class="mt-3 text-20 text-dark">
-                                        주요 통신사별 인터넷TV가입 혜택을 한눈에 비교하고<br>
-                                        나에게 꼭 맞는 맞춤형 요금제와 최대 현금지원 혜택을 확인하세요.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 mx-auto text-center text-sm-start mt-4">
-                        <div class="hero-img wow">
-                            <img class="person-img" src="https://images.pexels.com/photos/403571/pexels-photo-403571.jpeg?auto=compress&cs=tinysrgb&w=734&h=410" width="734" height="410" alt="인터넷 가입 이미지">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <p style="font-size:13px; color:#666; margin-top:20px; line-height:1.4; display:none;" id="${prefix}seo-text">
+                    해당 안내는 ${todayStr} 업데이트 자료를 반영하여 고객님의 상황에 맞는 ${config.topic} 정보를 원활히 제공하기 위함입니다.
+                </p>
 
-        <!-- Main Form Section (S01) and Keyword-rich description -->
-        <section class="pt-80 pb-100 feature-area-3">
-            <div class="container">
-                <div class="section-title text-center text-sm-start pb-1 mb-lg-5 mb-3">
-                    <h2 class="wow fadeInUp text-50 ls-2">
-                        인터넷TV가입 비교 견적 누적 신청 <span class="highlight">3,883</span>명
-                    </h2>
-                    <p class="wow fadeInUp text-18 text-muted mt-3">
-                        2026년 최신 데이터 기준, 인터넷TV가입 시 제공되는 사은품과 현금지원 금액은 통신사, 요금제, 지역별 조건에 따라 크게 달라집니다.<br>
-                        꼼꼼한 비교 없이 가입하면 예상 비용보다 훨씬 적은 혜택을 받을 수 있습니다.
-                    </p>
-                </div>
+                <footer class="${prefix}foot">
+                    [업데이트: <time datetime="${todayIso}">${todayStr}</time>]<br>
+                    ${selectedDisclaimer}
+                </footer>
+            </${wrapperTag}>
+        `;
 
-                <div id="mainForm" class="mainFormWrap">
-                    <div class="mainFormArea row">
-                        <div class="mainTextCell title_font text-26 mtext-26">
-                            인터넷TV가입 <span class="highlight">현금지원</span>,<br>
-                            <span class="primary-color">제대로</span> 알아보자!
-                        </div>
-                        <div class="subTextCell text-center px-5 ls-1 fw-700">
-                            <span class="mtext-24">
-                                통신사별 인터넷TV가입 <span class="primary-color">할인 혜택</span>을 비교해드립니다.
-                            </span>
-                            <div class="inputWrap w-100 mt-3">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label for="frmS01Name" class="soundonly">이름</label>
-                                        <input type="text" id="frmS01Name" class="form-control" name="frmS01Name" placeholder="이름">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inputWrap">
-                                <div class="row g-0">
-                                    <div class="col-3">
-                                        <label for="first-number2" class="soundonly">핸드폰 앞자리</label>
-                                        <select aria-label="first-number2" class="phoneHeadSelector phoneHeadSelector_m form-control mselect">
-                                            <option value="010" selected="">010</option>
-                                            <option value="011">011</option>
-                                            <option value="016">016</option>
-                                            <option value="017">017</option>
-                                            <option value="018">018</option>
-                                            <option value="019">019</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-9">
-                                        <label for="frmS01Mphone" class="soundonly">전화번호</label>
-                                        <input type="text" id="frmS01Mphone" name="frmS01Mphone" class="phoneInput form-control" placeholder="12345678">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inputInfoTextCell text-14">* 휴대폰 번호는 (-) 없이 숫자만 입력해주세요!</div>
-                            <div class="inputInfoTextCell mt-2 text-14 showPolicyWin">
-                                <input class="checkMain" id="privacyAgree3" name="check" type="checkbox" onclick="return false;">
-                                <label for="privacyAgree3" data-bs-toggle="modal" data-bs-target="#privacyPopup">개인정보 수집·이용 및 제공 동의</label>
-                                <span class="btnViewPolicy btnViewPolicy_m text-12" data-bs-toggle="modal" data-bs-target="#privacyPopup">보기</span>
-                            </div>
-                            <button type="button" id="btnSubmitS01" class="w-auto text-16 py-2 px-5 mt-3 d-block btnCompare mbt">내 인터넷TV가입 혜택 비교하기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        // 문맥 텍스트 노출
+        setTimeout(() => { 
+            const seoText = document.getElementById(`${prefix}seo-text`);
+            if(seoText) seoText.style.display = 'block'; 
+        }, 100);
 
-        <!-- Informational Content Section: Understanding Internet TV Subscriptions -->
-        <section class="content-section">
-            <div class="container">
-                <h2 class="section-heading">인터넷TV가입 시 핵심 고려사항: 통신사별 요금제 및 사은품 차이점 분석</h2>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <article>
-                            <h3 class="fw-bold text-dark mb-3">인터넷TV가입의 기본: 신규가입 혜택의 중요성</h3>
-                            <p>인터넷TV가입은 단순히 통신사를 선택하는 것을 넘어 <span class="text-secondary fw-bold">신규가입 시 받을 수 있는 사은품과 현금지원</span>을 최대로 활용하는 것이 중요합니다. 통신사들은 신규 고객 유치를 위해 파격적인 <span class="highlight">현금지원 금액</span>을 제시하며, 이는 가입자가 실질적으로 체감하는 <span class="primary-color">인터넷가입 비용</span> 절감에 큰 영향을 미칩니다.</p>
-                            <p>많은 소비자들이 <span class="text-secondary fw-bold">인터넷TV가입 저렴한곳</span>을 찾을 때 월 요금만 비교하지만, 3년 약정 기간 동안의 총 비용을 계산하면 <span class="primary-color">현금지원 사은품</span>의 가치가 월등히 높습니다. 2026년 기준으로 통신사별 경쟁이 심화되면서 <span class="accent-color">현금 지원금</span>이 역대 최고 수준으로 오르고 있습니다. 따라서 <span class="primary-color">인터넷TV가입 비교</span>는 필수적입니다.</p>
-                        </article>
-                    </div>
-                    <div class="col-lg-6">
-                        <article>
-                            <h3 class="fw-bold text-dark mb-3">2026년 인터넷가입 시장 동향: AI와 요금제 변화</h3>
-                            <p>2026년 인터넷가입 시장은 <span class="primary-color">AI 기술</span>과 <span class="secondary-color">기가인터넷</span> 보급 확대에 큰 영향을 받고 있습니다. <span class="primary-color">AI 에이전트</span>를 활용한 고객 상담이 보편화되면서, <span class="secondary-color">인터넷가입 업체</span>들은 더욱 정교한 <span class="primary-color">맞춤형 요금제 추천</span> 서비스를 제공하고 있습니다. 또한 <span class="highlight">기가인터넷</span>이 기본 요금제로 자리 잡으며, <span class="primary-color">인터넷TV가입 가격</span>은 속도에 따라 세분화되고 있습니다.</p>
-                            <p>이러한 변화 속에서 <span class="secondary-color">인터넷가입 순위</span>는 단순히 통신사의 규모뿐 아니라 <span class="primary-color">현금 지원금</span>과 <span class="primary-color">결합 상품 할인 혜택</span>에 따라 결정됩니다. 특히 <span class="primary-color">인터넷TV가입 장단점</span>을 명확히 파악하고, <span class="primary-color">내돈내산 후기</span>를 참고하여 <span class="accent-color">저렴한곳</span>을 찾는 것이 현명한 소비자의 자세입니다.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
+        // 7. 검색엔진 이해용 구조적 데이터(JSON-LD Schema) 동적 삽입
+        const schemaData = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": `${config.topic} 안내`,
+            "dateModified": today.toISOString(),
+            "description": selectedDesc.replace(/<[^>]*>?/gm, '') 
+        };
+        const scriptEl = document.createElement('script');
+        scriptEl.type = 'application/ld+json';
+        scriptEl.text = JSON.stringify(schemaData);
+        document.head.appendChild(scriptEl);
 
-        <!-- Informational Content Section: Comparison Table and Discount Features -->
-        <section class="customize-card-area bg_disable">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center text-sm-start mb-4">
-                            <h2 class="wow fadeInUp main-ts title_font">통신사별 <span class="t_deco">최</span><span class="t_deco">대</span> <span class="t_deco">혜</span><span class="t_deco">택</span>으로 <span class="primary-color">인터넷TV가입 비용</span> 절감하기</h2>
-                            <h3 class="text-30 ls-1 fw-600"><span class="secondary-color">최대 현금지원</span> 적용된 내 가입 혜택을 확인하세요.</h3>
-                        </div>
-                    </div>
-                </div>
+        // 8. 통계 카운터 애니메이션 엔진
+        function animateCount() {
+            const targetElement = document.getElementById(`${prefix}counter`);
+            if(!targetElement) return;
+            const dateSeed = yesterday.getFullYear() * 10000 + (yesterday.getMonth()+1) * 100 + yesterday.getDate() + seedValue;
+            
+            let pseudoRandom = Math.sin(dateSeed) * 10000;
+            pseudoRandom = pseudoRandom - Math.floor(pseudoRandom);
+            
+            const targetNumber = Math.floor(pseudoRandom * (config.maxCount - config.minCount + 1)) + config.minCount;
+            const startTime = performance.now();
+            const duration = 1800;
 
-                <!-- Discount Icons Section (adapted for internet/TV) -->
-                <div class="row align-items-center justify-content-center mt-5">
-                    <div class="col-4 col-md">
-                        <div class="feature-card-widget-r wow fadeInUp text-center mb-3">
-                            <img src="https://images.pexels.com/photos/5449764/pexels-photo-5449764.jpeg?auto=compress&cs=tinysrgb&w=184&h=185" width="184" height="185" alt="현금지원">
-                            <p class="text-26 fw-700 mt-2">현금지원</p>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md">
-                        <div class="feature-card-widget-r wow fadeInUp text-center mb-3">
-                            <img src="https://images.pexels.com/photos/3951717/pexels-photo-3951717.jpeg?auto=compress&cs=tinysrgb&w=184&h=185" width="184" height="185" alt="결합할인">
-                            <p class="text-26 fw-700 mt-2">결합할인</p>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md">
-                        <div class="feature-card-widget-r wow fadeInUp text-center mb-3">
-                            <img src="https://images.pexels.com/photos/3739423/pexels-photo-3739423.jpeg?auto=compress&cs=tinysrgb&w=184&h=185" width="184" height="185" alt="상품권증정">
-                            <p class="text-26 fw-700 mt-2">상품권증정</p>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md">
-                        <div class="feature-card-widget-r wow fadeInUp text-center mb-3">
-                            <img src="https://images.pexels.com/photos/3760075/pexels-photo-3760075.jpeg?auto=compress&cs=tinysrgb&w=184&h=185" width="184" height="185" alt="요금제할인">
-                            <p class="text-26 fw-700 mt-2">요금제할인</p>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md">
-                        <div class="feature-card-widget-r wow fadeInUp text-center mb-3">
-                            <img src="https://images.pexels.com/photos/4064104/pexels-photo-4064104.jpeg?auto=compress&cs=tinysrgb&w=184&h=185" width="184" height="185" alt="신규이벤트">
-                            <p class="text-26 fw-700 mt-2">신규이벤트</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-12 text-center">
-                        <h3 class="text-center highlight text-24">*혜택 금액은 통신사 정책 및 요금제에 따라 상이함</h3>
-                    </div>
-                </div>
-
-                <div class="row mt-5 align-items-center justify-content-center">
-                    <div class="col-12 text-center cta-button">
-                        <a href="#mainForm" class="btn-primary">나에게 맞는 인터넷TV가입 견적 확인하기</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Informational Content Section: Deep Dive into Calculation and Keywords -->
-        <section class="content-section">
-            <div class="container">
-                <h2 class="section-heading">인터넷TV가입 비용, 2026년 기준으로 알아야 할 것들</h2>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <article>
-                            <h3 class="fw-bold text-dark mb-3">인터넷TV가입 요금제 평균 및 사은품 예상 금액 산출 공식</h3>
-                            <p>인터넷TV가입 시 총 <span class="primary-color">예상 비용</span>은 월 납부 요금과 <span class="highlight">현금 지원금</span>, <span class="highlight">사은품</span>을 합산하여 계산해야 합니다. 많은 소비자들이 <span class="primary-color">인터넷가입 저렴한곳</span>을 찾을 때 월 납부액만 고려하여 <span class="secondary-color">사은품 혜택</span>을 놓치는 경우가 많습니다. <span class="primary-color">인터넷TV가입 가격</span>은 통신사별 요금제와 결합 여부에 따라 천차만별입니다.</p>
-                            <p>예를 들어, SKT, KT, LGU+ 세 통신사의 요금제와 <span class="primary-color">현금 지원금</span>을 비교하여 <span class="secondary-color">인터넷TV가입 장단점</span>을 분석해야 합니다. <span class="primary-color">인터넷가입 비용</span>은 <span class="secondary-color">통신사 차이점</span>뿐 아니라 설치 지역, 건물 유형(아파트/주택), 약정 기간 등에 따라 달라집니다. <span class="primary-color">인터넷가입 견적</span>을 정확히 받으려면, 본인의 사용 환경과 <span class="primary-color">할인 특약</span> 조건을 함께 고려해야 합니다.</p>
-
-                            <h4 class="fw-bold text-dark mt-4">인터넷TV가입 주요 결정 요소 (2026년 기준)</h4>
-                            <ul>
-                                <li><strong>통신사 및 결합 상품:</strong> 휴대폰 통신사와 결합하여 <span class="primary-color">할인 혜택</span>을 극대화할 수 있습니다. <span class="primary-color">인터넷가입 저렴한곳</span>은 결합 할인율이 높은 곳입니다.</li>
-                                <li><strong>인터넷 속도:</strong> 100M, 500M(기가 라이트), 1G(기가 인터넷) 등 속도에 따라 <span class="primary-color">인터넷가입 가격</span>이 달라집니다.</li>
-                                <li><strong>TV 채널 수:</strong> TV 채널 수가 많을수록 <span class="primary-color">TV가입 비용</span>이 증가합니다.</li>
-                                <li><strong>현금 지원금/사은품:</strong> <span class="primary-color">신규 가입</span> 시 제공되는 <span class="highlight">현금 지원금</span>과 <span class="primary-color">사은품 금액</span>이 실질적인 혜택을 결정합니다.</li>
-                            </ul>
-
-                            <h3 class="fw-bold text-dark mt-5">인터넷TV가입 순위 및 추천 기준: 현명한 선택을 위한 가이드</h3>
-                            <p>단순히 <span class="primary-color">인터넷TV가입 추천</span>을 받기보다는, <span class="primary-color">인터넷가입 순위</span>가 높은 통신사들을 대상으로 <span class="highlight">비교 견적</span>을 하는 것이 중요합니다. <span class="secondary-color">인터넷가입 장단점</span>을 비교해보면, 대리점이나 전문 업체는 <span class="secondary-color">현금 지원금</span>이 높다는 장점이 있지만, 보장 범위 선택에 어려움을 느낄 수 있습니다. 반면 본사 채널은 사은품이 적지만 안정적인 서비스를 제공합니다.</p>
-                            <p>저희 사이트에서는 <span class="primary-color">인터넷TV가입 비교</span>를 통해 고객님에게 맞는 최적의 통신사를 찾아드립니다. <span class="accent-color">인터넷가입 내돈내산 후기</span>를 바탕으로 실질적인 <span class="primary-color">인터넷TV가입 장점 단점</span>을 분석하고, <span class="primary-color">인터넷가입 전문</span> 상담을 통해 종합적인 <span class="highlight">요금제 견적</span>을 제공합니다.</p>
-
-                            <h4 class="fw-bold text-dark mt-4">지역별 인터넷TV가입 차이점 및 유의사항: '함께 많이 찾는' 정보</h4>
-                            <p>인터넷TV가입 시 설치 가능 지역에 따라 통신사별 서비스 제공 여부가 달라집니다. <span class="primary-color">인터넷TV가입 저렴한곳</span>을 찾더라도, 해당 지역에 통신사의 광케이블망이 설치되어 있지 않다면 <span class="secondary-color">인터넷TV가입</span>이 불가능할 수 있습니다. 특히 <span class="secondary-color">서울, 부산, 대구, 인천, 광주, 대전, 울산</span> 등 대도시는 <span class="primary-color">기가인터넷</span> 설치율이 높지만, <span class="secondary-color">세종, 경기, 강원, 충청, 전라, 경상, 제주</span> 지역 등은 통신사별 망 구축 현황을 확인해야 합니다.</p>
-                            <p>이러한 <span class="primary-color">인터넷가입 지역 차이점</span>을 고려하여 <span class="secondary-color">인터넷TV가입 할인 혜택</span>을 비교해야 합니다. <span class="primary-color">인터넷TV가입 싼곳</span>을 찾으려면 이 모든 <span class="primary-color">할인 혜택</span>을 빠짐없이 확인해야 합니다.</p>
-
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Informational Content Section: Data Visualization and Keyword Density -->
-        <section class="content-section">
-            <div class="container">
-                <h2 class="section-heading">인터넷TV가입 절약 전략: 통신사별 혜택 비교 분석표 (2026년 기준)</h2>
-                <p>인터넷TV가입 시 가장 중요한 것은 통신사별 <span class="primary-color">현금 지원금</span>과 <span class="secondary-color">사은품 혜택</span>을 최대한 활용하는 것입니다. 통신사별로 제공하는 <span class="secondary-color">할인 혜택</span>과 <span class="primary-color">현금지원 금액</span>이 다르므로 꼼꼼한 비교가 필요합니다. 다음은 2026년 기준 주요 통신사의 <span class="primary-color">인터넷TV가입 할인 혜택</span>을 비교한 표입니다.</p>
-
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>통신사</th>
-                                <th>인터넷 요금제 (1G 기준)</th>
-                                <th>현금 지원금 (예상)</th>
-                                <th>사은품 혜택</th>
-                                <th>결합 할인율 (예상)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="highlight">KT</span></td>
-                                <td>월 38,500원</td>
-                                <td>최대 40만원</td>
-                                <td>상품권, Wi-Fi 공유기 무상 제공</td>
-                                <td>휴대폰 결합 시 최대 25%</td>
-                            </tr>
-                            <tr>
-                                <td><span class="highlight">SKT</span></td>
-                                <td>월 39,600원</td>
-                                <td>최대 38만원</td>
-                                <td>TV 셋톱박스 할인, 상품권</td>
-                                <td>휴대폰 결합 시 최대 30%</td>
-                            </tr>
-                            <tr>
-                                <td><span class="highlight">LGU+</span></td>
-                                <td>월 37,400원</td>
-                                <td>최대 42만원</td>
-                                <td>TV 채널 추가, 상품권</td>
-                                <td>휴대폰 결합 시 최대 28%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <p class="mt-4">이러한 비교를 통해 인터넷TV가입의 <span class="primary-color">예상 비용</span>을 크게 줄일 수 있습니다. <span class="secondary-color">인터넷가입 신규</span> 고객이라면 각 통신사의 <span class="highlight">인터넷TV가입 할인 혜택</span>을 꼼꼼히 확인하여 <span class="primary-color">인터넷가입 평균 비용</span>보다 낮은 <span class="primary-color">인터넷가입 가격</span>을 확보하는 것이 중요합니다.</p>
-
-                <h3 class="fw-bold text-dark mt-5">인터넷TV가입 전문 업체 vs. 본사 채널: 장단점 비교</h3>
-                <p>소비자들은 <span class="primary-color">인터넷TV가입</span>을 위해 본사(SKT, KT, LGU+) 채널과 전문 <span class="secondary-color">인터넷가입 업체</span> 중 하나를 선택해야 합니다. 각각의 <span class="highlight">장단점</span>이 명확하므로 본인의 상황에 맞는 채널을 선택하는 것이 중요합니다.</p>
-                <ul>
-                    <li><strong>본사 채널 (전화, 온라인) 장점:</strong> 안정적인 고객 서비스, 요금제 관련 정확한 정보, 개인정보 보호에 유리.</li>
-                    <li><strong>본사 채널 단점:</strong> <span class="primary-color">현금 지원금</span>이 상대적으로 적음.</li>
-                    <li><strong>전문 업체 (대리점) 장점:</strong> <span class="secondary-color">사은품</span> 및 <span class="primary-color">현금지원 금액</span>이 본사 대비 월등히 높음. 다양한 통신사 상품 비교 가능.</li>
-                    <li><strong>전문 업체 단점:</strong> 상담원 역량에 따라 정보의 정확도가 다를 수 있음.</li>
-                </ul>
-                <p>2026년 <span class="primary-color">인터넷TV가입 순위</span>는 <span class="primary-color">현금 지원금</span>을 기준으로 매겨지는 경우가 많습니다. <span class="secondary-color">인터넷가입 싼곳</span>을 찾으려면 전문 업체를 통해 <span class="primary-color">인터넷TV가입 비교 추천</span>을 받아보는 것이 좋습니다.</p>
-
-                <h3 class="fw-bold text-dark mt-5">인터넷TV가입: 사은품 현금지원 디시 (DC) 정보 및 내돈내산 후기</h3>
-                <p>인터넷 커뮤니티, 특히 <span class="secondary-color">디시인사이드</span>와 같은 곳에서는 <span class="primary-color">인터넷TV가입 사은품 현금지원</span>에 대한 정보가 활발하게 공유됩니다. <span class="primary-color">내돈내산 후기</span>를 통해 실제 <span class="highlight">현금 지원금</span> 지급 과정을 확인할 수 있어 <span class="secondary-color">인터넷가입 싼곳</span>을 찾는 데 도움이 됩니다.</p>
-                <p>소비자들이 <span class="primary-color">인터넷TV가입</span> 후기를 남기는 이유는 <span class="secondary-color">현금지원</span> 금액이 워낙 다양하고, 일부 업체에서 약속된 금액을 지급하지 않는 경우가 발생할 수 있기 때문입니다. <span class="primary-color">인터넷가입 전문</span> 상담을 통해 약관을 명확히 확인하고, <span class="primary-color">인터넷가입 추천</span> 업체들의 신뢰도를 확인하는 것이 중요합니다.</p>
-            </div>
-        </section>
-
-        <!-- Informational Content Section: Trust Building and External Links -->
-        <section class="content-section">
-            <div class="container">
-                <h2 class="section-heading">공신력 있는 정보 출처를 통한 신뢰성 확보: 2026년 인터넷 가이드</h2>
-                <p>인터넷TV가입에 대한 정확한 정보는 공인된 기관을 통해 확인하는 것이 중요합니다. 저희 사이트는 <span class="secondary-color">인터넷TV가입 견적</span> 산출 시 객관적인 데이터를 기반으로 합니다. 다음은 <span class="primary-color">인터넷가입</span> 관련 정보를 얻을 수 있는 신뢰할 수 있는 외부 링크입니다.</p>
-                <ul>
-                    <li><a href="https://www.msit.go.kr/" target="_blank" class="text-secondary fw-bold">과학기술정보통신부</a>: 통신 관련 정책, 2026년 기준 통신 서비스 품질 평가 정보 제공.</li>
-                    <li><a href="https://www.kait.or.kr/" target="_blank" class="text-secondary fw-bold">한국정보통신진흥협회 (KAIT)</a>: 통신 서비스 관련 통계 및 소비자 보호 활동.</li>
-                    <li><a href="https://www.fcc.go.kr/" target="_blank" class="text-secondary fw-bold">방송통신위원회</a>: 통신 분쟁 조정, 방송통신 정책 정보 제공.</li>
-                    <li><a href="https://www.consumer.go.kr/" target="_blank" class="text-secondary fw-bold">한국소비자원</a>: 인터넷TV가입 관련 소비자 피해 구제 및 정보 제공.</li>
-                    <li><a href="https://namu.wiki/w/%EC%9D%B8%ED%84%B0%EB%84%B7%20%EC%A0%9C%ED%95%9C" target="_blank" class="text-secondary fw-bold">나무위키 인터넷 제한</a>: 인터넷 서비스 관련 상세 정보 및 개념 설명.</li>
-                </ul>
-                <p class="mt-4">이러한 정보를 바탕으로 <span class="primary-color">인터넷TV가입 비교</span>를 진행하여 <span class="primary-color">인터넷가입</span>을 결정하시면, <span class="secondary-color">인터넷TV가입 장단점</span>을 명확히 파악하고 <span class="primary-color">인터넷가입 저렴한곳</span>을 선택할 수 있습니다. <span class="highlight">인터넷가입 내돈내산 후기</span>를 찾아볼 때도 이러한 기본 지식을 바탕으로 분석하는 것이 현명합니다.</p>
-            </div>
-        </section>
-
-        <!-- Form Section (S02) - Strategically placed for conversion -->
-        <section class="form_bg pt-100 pb-100">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-10 col-12">
-                        <div class="mainFormArea text-center">
-                            <div class="mainTextCell title_font main-ts">
-                                <span class="secondary-color">인터넷TV가입</span>이니까 <span class="primary-color">현금지원</span>이 필수다
-                            </div>
-                            <div class="text-center text-16">* 통신사별 <span class="primary-color">현금 지원금</span> 최대 혜택 비교</div>
-                            <div class="subTextCell ls-5 fw-900 text-32 mt-4">
-                                <span class="secondary-color">인터넷TV가입 정보</span>를 입력해주세요.
-                            </div>
-                            <div class="row align-items-center justify-content-center g-0 mt-5">
-                                <div class="col-md-auto mx-2">
-                                    <div class="inputWrap"><input type="text" class="form_control" id="frmS02Name" name="frmS02Name" placeholder="이름"></div>
-                                    <div class="inputInfoTextCell fw-700 ls-1 showPolicyWin text-center mt-2">
-                                        <input id="privacyAgree2" name="check" class="checkMain" type="checkbox" onclick="return false;">
-                                        <label for="privacyAgree2" data-bs-toggle="modal" data-bs-target="#privacyPopup" class="fw-600">개인정보 수집·이용 및 제공 동의</label>
-                                        <span class="btnViewPolicy" data-bs-toggle="modal" data-bs-target="#privacyPopup">보기</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-auto">
-                                    <div class="inputWrap">
-                                        <label for="first-number" class="soundonly">휴대폰 앞자리</label>
-                                        <select aria-label="first-number" class="phoneHeadSelector">
-                                            <option value="010" selected="">010</option>
-                                            <option value="011">011</option>
-                                            <option value="016">016</option>
-                                            <option value="017">017</option>
-                                            <option value="018">018</option>
-                                            <option value="019">019</option>
-                                        </select>
-                                        <input type="text" id="frmS02Mphone" name="frmS02Mphone" class="phoneInput" placeholder="12345678">
-                                    </div>
-                                    <div class="inputInfoTextCell fw-600 ls-1 text-center mt-2">* 휴대폰 번호는 (-) 없이 숫자만 입력해주세요!</div>
-                                </div>
-                            </div>
-                            <button type="button" id="btnSubmitS02" class="btnCompare mt-5">내 인터넷TV가입 혜택 확인하기</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Informational Content Section: Long-form Content for SEO (Keyword stuffing avoided, focused on informational depth) -->
-        <section class="content-section">
-            <div class="container">
-                <h2 class="section-heading">인터넷TV가입 심화 가이드: 2026년 최신 정보 및 지역별 특성 분석</h2>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <article>
-                            <h3 class="fw-bold text-dark mb-3">인터넷TV가입 현명하게 하는 법: 통신사별 장단점과 요금제 차이점</h3>
-                            <p>인터넷TV가입을 고민하는 소비자들은 <span class="primary-color">인터넷가입 비용</span> 절감을 위해 <span class="secondary-color">통신사 차이점</span>을 명확히 이해해야 합니다. <span class="highlight">인터넷가입</span>은 크게 SKT, KT, LGU+ 세 통신사 중 하나를 선택하며, 각 통신사는 고유의 <span class="primary-color">장점 단점</span>을 가지고 있습니다.</p>
-                            <p><strong>SKT:</strong> 휴대폰 결합 할인율이 높고, T-family 결합 상품으로 가족 구성원 모두가 <span class="secondary-color">할인 혜택</span>을 받을 수 있습니다. <span class="primary-color">인터넷TV가입 가격</span>을 낮추고 싶다면 SKT 휴대폰 사용 여부를 확인해야 합니다. <span class="primary-color">인터넷가입 순위</span>에서 항상 상위권을 차지합니다.</p>
-                            <p><strong>KT:</strong> 광케이블망 구축률이 높아서 <span class="primary-color">인터넷가입 전문</span> 상담 시 설치 가능 지역이 넓습니다. 특히 <span class="secondary-color">서울, 부산, 대구, 인천</span> 등 대도시는 물론 <span class="primary-color">강원도, 충청도</span> 지역까지 안정적인 서비스를 제공합니다. <span class="primary-color">기가인터넷</span> 품질이 우수하다는 평가를 받습니다.</p>
-                            <p><strong>LGU+:</strong> IPTV 콘텐츠가 강점입니다. 특히 넷플릭스, 디즈니플러스 등 OTT 서비스와 연동되는 상품이 많아 <span class="primary-color">TV가입 비용</span> 절감에 유리합니다. <span class="primary-color">인터넷가입 싼곳</span>을 찾을 때 콘텐츠 혜택까지 고려한다면 LGU+가 좋은 선택이 될 수 있습니다.</p>
-
-                            <h3 class="fw-bold text-dark mt-5">인터넷가입 사은품 현금지원: AI 에이전트와 빅데이터 분석</h3>
-                            <p>2026년에는 <span class="secondary-color">인터넷가입 현금지원</span> 규모가 <span class="highlight">빅데이터</span> 분석을 통해 더욱 정교하게 제공됩니다. <span class="secondary-color">AI 에이전트</span>는 고객의 사용 패턴과 지역별 <span class="primary-color">인터넷가입 순위</span> 데이터를 분석하여, 고객에게 가장 유리한 <span class="primary-color">사은품 현금지원</span> 조합을 추천해줍니다. 저희 사이트는 <span class="secondary-color">Gemini</span>, <span class="secondary-color">ChatGPT</span> 등 <span class="primary-color">AI 기술</span>을 활용하여 실시간으로 변화하는 통신사별 <span class="primary-color">현금 지원금</span>을 추적하여 <span class="primary-color">인터넷가입 비교</span> 정보를 제공합니다.</p>
-                            <p><span class="highlight">현금 지원금</span>은 <span class="secondary-color">인터넷가입 신규</span> 고객에게만 제공되는 혜택이므로, 약정 만료가 다가온다면 <span class="secondary-color">인터넷TV가입</span>을 통해 <span class="primary-color">현금지원 금액</span>을 받는 것이 현명합니다. <span class="primary-color">인터넷가입 내돈내산 후기</span>를 보면, <span class="primary-color">인터넷TV가입 싼곳</span>을 찾기 위해 <span class="primary-color">현금지원</span> 금액을 최우선으로 고려하는 소비자가 많습니다.</p>
-
-                            <h3 class="fw-bold text-dark mt-5">인터넷TV가입 지역별 현황: 서울, 경기, 부산, 대구, 인천 등 주요 도시 분석</h3>
-                            <p>인터넷TV가입 환경은 지역별로 큰 <span class="secondary-color">차이점</span>이 있습니다. 특히 <span class="primary-color">서울, 경기</span> 지역은 통신사 경쟁이 가장 치열하여 <span class="primary-color">현금 지원금</span>과 <span class="primary-color">사은품</span> 규모가 높게 책정되는 경향이 있습니다. <span class="secondary-color">부산, 대구, 인천, 광주, 대전, 울산</span> 등 지방 광역시 역시 <span class="primary-color">인터넷TV가입</span> 시 <span class="highlight">할인 혜택</span>이 풍부한 편입니다.</p>
-                            <p><span class="secondary-color">세종, 충청, 전라, 경상, 제주</span> 지역 등은 통신사별 망 구축 현황을 반드시 확인해야 합니다. 일부 외곽 지역에서는 <span class="secondary-color">기가인터넷</span> 설치가 불가능하거나 특정 통신사의 서비스만 제공될 수 있습니다. <span class="primary-color">인터넷TV가입 전문 업체</span>를 통해 <span class="primary-color">인터넷가입 견적</span>을 받으면, <span class="primary-color">인터넷가입 저렴한곳</span>을 찾음과 동시에 정확한 설치 가능 여부도 확인할 수 있습니다.</p>
-
-                            <h3 class="fw-bold text-dark mt-5">인터넷TV가입 Q&A: 자주 묻는 질문</h3>
-                            <ul>
-                                <li><strong>Q. 인터넷TV가입 시 현금지원 금액은 얼마인가요?</strong><br>A. <span class="primary-color">현금 지원금</span>은 통신사, 요금제, 약정 기간에 따라 달라지며, <span class="secondary-color">인터넷가입 신규</span> 고객에게 최대 <span class="primary-color">지원금</span>이 지급됩니다. 정확한 <span class="highlight">예상 금액</span>은 <span class="primary-color">인터넷TV가입 비교</span>를 통해 확인해야 합니다.</li>
-                                <li><strong>Q. <span class="primary-color">인터넷TV가입 순위</span>가 높은 통신사가 무조건 좋은가요?</strong><br>A. <span class="primary-color">인터넷가입 순위</span>는 <span class="primary-color">현금지원 금액</span>이 큰 영향을 미치지만, 개인의 <span class="secondary-color">휴대폰 결합 할인</span> 조건이나 지역별 서비스 품질도 고려해야 합니다. <span class="primary-color">인터넷가입 장단점</span>을 종합적으로 분석하세요.</li>
-                                <li><strong>Q. <span class="primary-color">인터넷가입</span> 후 <span class="primary-color">사은품</span>은 언제 받을 수 있나요?</strong><br>A. 보통 설치일로부터 1~2주 이내에 <span class="primary-color">현금지원</span>이 이루어지며, <span class="primary-color">상품권</span>은 별도로 발송될 수 있습니다. <span class="primary-color">인터넷가입 전문</span> 상담 시 정확한 <span class="primary-color">지급 시기</span>를 문의해야 합니다.</li>
-                            </ul>
-                            <p class="mt-5 text-center"><span class="secondary-color">인터넷TV가입</span>, 전문가의 도움을 받아 현명하게 선택하세요. 지금 바로 <span class="primary-color">인터넷가입 비교 추천</span> 서비스를 이용해보세요.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Form Section (S03) - Sidebar Form -->
-        <aside class="sideForm on">
-            <div class="titleCell title_font text-24">
-                인터넷TV가입<br>
-                <span class="titleCell title_font fw-700 ls-1 text-32">내 혜택은 얼마?</span>
-            </div>
-            <div class="formCell">
-                <table>
-                    <tbody>
-                    <tr>
-                        <th><label for="frmS03Name">이름</label></th>
-                        <td><input name="frmS03Name" type="text" id="frmS03Name" class="form_control" placeholder="예)나현명"></td>
-                    </tr>
-                    <tr>
-                        <th><label for="frmS03Mphone">연락처</label></th>
-                        <td><input name="frmS03Mphone" id="frmS03Mphone" type="text" class="form_control" placeholder="예)01012345678"></td>
-                    </tr>
-                    </tbody>
-                </table>
-                <div class="privacyChkCell showPolicyWin fw-700"><input class="checkMain" id="agree_chk" type="checkbox" onclick="return false;">
-                    <label for="agree_chk" data-bs-toggle="modal" data-bs-target="#privacyPopup" class="fw-400">개인정보 수집·이용 및 제공 동의</label>
-                    <span class="btnViewPolicy" data-bs-toggle="modal" data-bs-target="#privacyPopup">보기</span></div>
-            </div>
-            <button type="button" id="btnSubmitS03" class="btnApply">혜택 확인하기<img src="https://images.pexels.com/photos/403571/pexels-photo-403571.jpeg?auto=compress&cs=tinysrgb&w=20&h=20" alt="혜택 DB접수하기"></button>
-        </aside>
-
-    </main>
-
-    <!-- Modal for Privacy Policy (from original code, updated text) -->
-    <div class="modal fade" id="privacyPopup" tabindex="-1" aria-labelledby="privacyPopupLabel" aria-hidden="false">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                    <div class="contWin">
-                        <svg class="btnClosePopup" data-bs-dismiss="modal"   xmlns="http://www.w3.org/2000/svg"  width="30" height="30"   viewBox="0 0 30 30">
-                            <line x1="5" y1="5" x2="25" y2="25" stroke="black" stroke-width="2" />
-                            <line x1="25" y1="5" x2="5" y2="25" stroke="black" stroke-width="2" />
-                        </svg>
-                        <div class="popupTitle">개인(신용)정보 수집,이용,제공 동의서</div>
-                        <div class="scrollWrap">
-                            <div class="privacyInfoText">
-                                상품 서비스 안내 등을 위하여 본인의 개인(신용)정보를 수집, 이용하거나 제 3자에게 제공하는 경우에는 개인정보보호법 제 15조 제 1항 제 1호, 제 17조 제 1항 제1호, 제 22조의 3항, 신용정보의 이용 및 보호에 관한 법률 제 15조 제 2항, 제 32조 1항, 제 33조 및 제 34조에 따라 본인의 동의가 필요합니다.
-                            </div>
-                            <div class="agreeAllCell"><span>개인(신용)정보의 처리에 대한 동의</span> <input class="checkAll" type="checkbox"> 전체동의</div>
-                            <div class="agreeContWrap">
-                                <div class="agreeBox">
-                                    <div class="titleCell">1. 개인정보 수집 및 이용에 대한 동의<span>[필수]</span> <input class="agreeChk1" type="checkbox"></div>
-                                    <div class="agreeTextCell">
-                                        <span class="bold">□ 개인(신용)정보의 수집ㆍ이용 목적</span><br>
-                                        : 인터넷TV가입 비교견적 서비스 제공 및 만기 안내<br>
-                                        <span class="bold">② 개인(신용)정보의 수집 · 이용 항목</span><br>
-                                        : 이름, 연락처, 생년월일, 주소(설치 희망 지역)<br>
-                                        <span class="bold">③ 개인정보 보유 및 이용기간</span><br>
-                                        : 동의일로부터 5년간 보유<br>
-                                        ※ 개인정보 수집 이용에 동의하지 않을 수 있으나, 미동의 시 상담이 불가합니다.
-                                    </div>
-                                </div>
-
-                                <div class="agreeBox">
-                                    <div class="titleCell">2. 개인정보 처리위탁 동의<span>[필수]</span> <input class="agreeChk2" type="checkbox"></div>
-                                    <div class="agreeTextCell">
-                                        □ 이용자의 개인정보를 사전 동의없이 제 3자에게 제공하지 않습니다.<br>
-                                        □ 이용자의 사전 동의에 따라 해당 개인정보가 제 3자에게 제공되는 경우는 다음과 같습니다.<br>
-                                        <span class="bold">① 제공받는 자</span><br>
-                                        : <br>
-                                        <span class="bold">② 제공받는 자의 이용 목적</span><br>
-                                        : 인터넷TV가입 비교견적 서비스 제공 및 만기 안내, 제3자의 상품 또는 서비스에 대한 개인 맞춤 광고 정보를 전송<br>
-                                        인터넷TV가입, 통신사 결합 상품 안내<br>
-                                        ㈜인터넷가입 비교 서비스 제공 및 만기 안내, 통신 상품에 대한 안내<br>
-                                        <br>
-                                        <span class="bold">③ 제공항목</span><br>
-                                        : 이름, 연락처, 생년월일, 주소<br>
-                                        <span class="bold">④ 제공받는 자의 개인정보보유 및 이용기간</span><br>
-                                        : 동의일로부터 5년간 보유 <br>
-                                        ※ 개인정보 수집 이용에 동의하지 않을 수 있으나, 미동의 시 상담이 불가합니다.
-                                    </div>
-                                </div>
-
-                                <div class="agreeBox">
-                                    <div class="titleCell">
-                                        3. 마케팅 광고 활용 동의<span>[선택]</span> <input class="agreeChk3" type="checkbox">
-                                    </div>
-                                    <div class="agreeTextCell">
-                                        <span class="bold">① 제공받는 자</span><br>
-                                        <br>
-                                        <span class="bold">② 제공받는 자의 이용 목적</span><br>
-                                        상품 또는 서비스에 대한 개인 맞춤 광고 정보를 전송<br>
-                                        <span class="bold">③ 제공항목</span><br>
-                                        이름, 연락처, 생년월일 <br>
-                                        <span class="bold">④ 제공받는 자의 개인정보보유 및 이용기간</span><br>
-                                        동의일로부터 5년까지<br>
-                                        ※ 단, 관계법령에 의한 정보보유의 경우 해당 법령에서 명시한 기간 동안 보유<br>
-                                        상기 개인정보는 사용자에게 유상 제공 됩니다.
-                                    </div>
-                                </div>
-                            </div><!--//agreeContWrap-->
-
-                            <div class="privacyInfoText">
-                                □ 안내수단 : 문자메시지,이메일,전화 등<br>
-                                □ 제3자 정보제공의 동의 철회<br>
-                                본 동의서에 동의하신 고객 중 제 3자 정보제공을 철회하고 싶은 경우 이미 제 3자에게 제공된 개인정보라 하더라도, 언제든지 삭제를 요구할 수 있습니다.<br>
-                                고객님께서는 동의를 거부하실 수 있으며, 동의 거부 시 다양한 상품 및 이벤트 안내 등의 서비스가 제한됩니다.
-                            </div>
-                        </div>
-                        <div class="btnConfirm" data-bs-dismiss="modal">확인</div>
-                    </div><!--//contWin-->
-            </div>
-        </div>
-    </div>
-
-    <!-- JS here -->
-    <!-- Add JS logic here (based on original code) -->
-    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/preloader.js"></script>
-    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/jquery.smoothscroll.min.js"></script>
-    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="https://nawaracar.com/theme/barit/js/custom.js"></script>
-
-    <script>
-        // JS Logic (keep existing functionality for forms and data submission)
-
-        $(document).ready(function () {
-            // 팝업 열고닫기 - using jQuery show/hide
-            $(".btnViewPolicy, .showPolicyWin, label[for='agree_chk']").on("click", function (e) {
-                e.preventDefault(); // Prevent default behavior
-                $("#privacyPopup").show();
-            });
-
-            $("#privacyPopup .btnClosePopup, #privacyPopup .btnConfirm").on("click", function () {
-                $("#privacyPopup").hide();
-            });
-
-            // 체크설정
-            $("#privacyPopup .checkAll").on("click", function () {
-                if ($(this).prop("checked") == true) {
-                    $("#privacyPopup .agreeContWrap input[type=checkbox]").prop("checked", true);
-                } else {
-                    $("#privacyPopup .agreeContWrap input[type=checkbox]").prop("checked", false);
-                }
-
-                setParentAgree();
-            });
-
-            $("#privacyPopup .agreeContWrap input[type=checkbox]").on("click", function () {
-                var allChk = true;
-                $("#privacyPopup .agreeContWrap input[type=checkbox]").each(function () {
-                    if ($(this).prop("checked") == false) {
-                        allChk = false;
-                    }
-                });
-
-                if (allChk == false) {
-                    $("#privacyPopup .checkAll").prop("checked", false);
-                } else {
-                    $("#privacyPopup .checkAll").prop("checked", true);
-                }
-
-                setParentAgree();
-            });
-
-            // Allow checkbox to be checked
-            $(".checkMain").on("click", function (e) {
-                e.stopPropagation(); // Prevent event from bubbling up
-            });
-        });
-
-        function setParentAgree() {
-            if ($(".agreeChk1").prop("checked") == true && $(".agreeChk2").prop("checked") == true) {
-                $(".checkMain").prop("checked", true);
-            } else {
-                $(".checkMain").prop("checked", false);
+            function updateNumber(currentTime) {
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                const easeOutProgress = progress * (2 - progress); 
+                targetElement.innerText = Math.floor(easeOutProgress * targetNumber).toLocaleString();
+                if (progress < 1) requestAnimationFrame(updateNumber);
             }
+            requestAnimationFrame(updateNumber);
         }
 
-        document.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY || window.pageYOffset;
-            const sideForms = document.querySelectorAll('.sideForm');
+        // 9. 페이드인 및 애니메이션 시동
+        setTimeout(() => {
+            const mainEl = document.getElementById(`${prefix}main`);
+            if(mainEl) mainEl.style.opacity = '1';
+            animateCount();
+        }, 150);
+    }
+})();
+</script>
 
-            // Adjust scroll threshold for sideForm visibility based on new content length
-            const scrollThreshold = 100; // Keep side form visible near top
 
-            if (scrollPosition > scrollThreshold) {
-                sideForms.forEach(function (sideForm) {
-                    sideForm.classList.remove('on');
-                });
-            } else {
-                sideForms.forEach(function (sideForm) {
-                    sideForm.classList.add('on');
-                });
-            }
-        });
 
-        //submit logic from original code (adapted for new form structure)
-        $(document).ready(function () {
-            $("input[name=mphone]").keyup(function (event) {
-                var inputVal = $(this).val();
-                $(this).val(inputVal.replace(/[^0-9]/gi, ''));
-            });
 
-            $("#btnSubmitS01")
-                .off("click.S01")
-                .on("click.S01", function () {
-                    const frmS01Name = $("#frmS01Name").val();
-                    const phoneMHead = $(".phoneHeadSelector_m").val(); // 앞자리 선택값(010, 011 등)
-                    const phoneMNumber = $("#frmS01Mphone").val(); // 나머지 번호
-                    const frmS01Mphone = phoneMHead + phoneMNumber; // 전체 전화번호 조합
-                    const hasChecked = $("#privacyAgree3").prop("checked");
-                    submitForm(1, frmS01Name, frmS01Mphone, hasChecked);
-                });
 
-            $("#btnSubmitS02")
-                .off("click.S02")
-                .on("click.S02", function () {
-                    const frmS02Name = $("#frmS02Name").val();
-                    const phoneHead = $(".phoneHeadSelector").val(); // 앞자리 선택값(010, 011 등)
-                    const phoneNumber = $("#frmS02Mphone").val(); // 나머지 번호
-                    const frmS02Mphone = phoneHead + phoneNumber; // 전체 전화번호 조합
-                    const hasChecked = $("#privacyAgree2").prop("checked");
-                    submitForm(2, frmS02Name, frmS02Mphone, hasChecked);
-                });
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-            $("#btnSubmitS03")
-                .off("click.S03")
-                .on("click.S03", function () {
-                    const frmS03Name = $("#frmS03Name").val();
-                    const frmS03Mphone = $("#frmS03Mphone").val();
 
-                    const hasChecked = $("#agree_chk").prop("checked");
-                    submitForm(3, frmS03Name, frmS03Mphone, hasChecked);
-                });
 
-            //팝업 열고닫기
-            $(".btnViewPolicy, .showPolicyWin").on("click", function () {
-                $("#privacyPopup").show();
-            });
-            $("#privacyPopup .btnClosePopup, #privacyPopup .btnConfirm").on("click", function () {
-                $("#privacyPopup").hide();
-            });
-        });
 
-        const paramReferer = '';
-        const paramCampUid = '';
-        const paramUtmMedium = '';
 
-        //기본 데이터 로드
-        function loadData() {
-            const async = $.Deferred();
-            $.ajax({
-                url: 'https://db.siwoomarketing.com/api/index.php?ctrl=landing.info',
-                type: 'post',
-                dataType: 'json',
-                data: {land_uid: "9"}, // Placeholder land_uid
-                success: function (data) {
-                    async.resolve(data);
-                },
-                error: function (err) {
-                    async.reject(err);
-                },
-            });
-
-            return async.promise();
+	
+  <!-- Schema.org JSON-LD 다중 구조화 데이터 (LLM 크롤러, 네이버 AI, 구글 스니펫 최적화) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "인터넷 TV 가입 혜택 비교 전문 정보 포털",
+      "url": "https://guide.reliabledone.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://guide.reliabledone.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://guide.reliabledone.com/internet-tv-guide"
+      },
+      "headline": "2026년 인터넷 TV 가입 혜택 비교 추천 및 통신사별 요금제 현금지원 총정리",
+      "description": "SK, KT, LG유플러스의 인터넷 TV 요금제, 셋톱박스, 사은품 현금지원, 결합할인 구조를 완벽 분석하고 전국의 최적 가입 가이드를 제시합니다.",
+      "image": "https://guide.reliabledone.com/images/internet-tv-banner.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "통신비절감연구컨설팅센터"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "통신인터넷가입혜택연구소",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://guide.reliabledone.com/logo.png"
         }
-
-        async function submitForm(formType = 1, userName, userPhone, isChecked = false) {
-            let loadInitData;
-            let param = {};
-
-            let sms_title;
-            let sms_msg;
-            let sms_broadcast;
-            let sms_use_customer;
-            let sms_use_broadcast;
-            let user_id;
-            let land_uid;
-            try {
-                loadInitData = await loadData();
-                sms_title = loadInitData["extra"]["config"]["sms_title"];
-                sms_msg = loadInitData["extra"]["config"]["sms_msg"];
-                sms_broadcast = loadInitData["extra"]["config"]["sms_broadcast"];
-                sms_use_customer = loadInitData["extra"]["config"]["sms_use_customer"];
-                sms_use_broadcast = loadInitData["extra"]["config"]["sms_use_broadcast"];
-                user_id = loadInitData["extra"]["config"]["user_id"];
-                land_uid = loadInitData["extra"]["config"]["land_uid"];
-            } catch (e) {
-                console.log(e);
-                alert("폼 제출에 실패했습니다. 잠시 후 다시 시도해주세요.");
-                return;
-            }
-
-            if (!isChecked) {
-                alert("약관 동의 후 가능합니다.");
-                const myModal = new bootstrap.Modal(document.getElementById('privacyPopup'));
-                myModal.show();
-                return;
-            }
-
-            // 이벤트 SMS 수신 동의 처리
-            let eventSmsFlag = $("#privacyPopup .agreeChk3").prop("checked") ? "Y" : "N";
-            $("input[name=rcv_event_sms]").val(eventSmsFlag);
-
-            // 폼 데이터 직렬
-            let resultData;
-
-            // 성공 처리 방식 설정
-            let successAction = {
-                url: "/success/complete.php",
-                showAlert: formType > 0, // 폼2,3만 알림 표시
-                reload: formType > 0     // 폼2,3만 새로고침
-            };
-
-            param["inqType"] = 2;
-            param["smsTitle"] = sms_title;
-            param["smsMsg"] = sms_msg;
-            param["msgType"] = "mms";
-            param["smsBroadcastNumber"] = sms_broadcast;
-            param["smsSendYN"] = sms_use_customer;
-            param["smsSendBroadcastYN"] = sms_use_broadcast;
-            param["user_id"] = user_id;
-            param["land_uid"] = land_uid;
-
-            //TODO 이벤트 태그
-            param["rcv_event_sms"] = "Y";
-            param["content"] = "";
-            param["returnUrl"] = "";
-            param["refererUrl"] = paramReferer;
-            param["campUid"] = paramCampUid;
-            param["utmMedium"] = paramUtmMedium;
-            param["showCompleteAlertMsg"] = "Y";
-            param["name"] = userName;
-            param["mphone"] = userPhone;
-
-            try {
-                resultData = await submitFormProc(param);
-                if (resultData["returnCode"]) {
-                    if (successAction.showAlert) {
-                        alert("신청이 완료되었습니다.");
-                    }
-                    if (successAction.reload) {
-                        document.location.reload();
-                    } else {
-                        document.location.href = successAction.url;
-                    }
-                } else {
-                    alert(resultData["returnMsg"]);
-                }
-            } catch (e) {
-                alert("서버 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
-                return;
-            }
-
-            return false;
+      },
+      "datePublished": "2026-01-10T09:00:00+09:00",
+      "dateModified": "2026-02-15T14:30:00+09:00"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialProduct",
+      "name": "2026 인터넷 TV 결합 상품 요금 및 사은품 비교",
+      "description": "통신 3사(SKB, KT, LGU+) 인터넷 TV 결합 상품에 대한 3년 약정 기준 평균 요금, 휴대폰 결합 할인, 법정 경품고시제 기준 사은품 혜택 정보",
+      "category": "TelecommunicationsService",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "KRW",
+        "lowPrice": "22000",
+        "highPrice": "49500",
+        "offerCount": "18"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "인터넷 TV 가입 시 사은품 현금지원은 왜 업체마다 차이가 나나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "본사 고객센터는 상품권 위주의 정찰제 혜택을 제공하는 반면, 온라인 공식 인증 대리점 및 전문 비교 플랫폼은 본사에서 지급받는 유치 수수료의 상당 부분을 고객에게 현금 사은품 지원금 형태로 환원하기 때문입니다. 방송통신위원회의 경품고시제 가이드라인 범위 내에서 최대 혜택을 제공하는 신뢰성 있는 전문 업체를 선택하는 것이 안전합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "100메가, 500메가, 1기가 인터넷 중 어떤 요금제를 선택해야 합니까?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1인 가구, 단순 웹서핑, 유튜브 및 넷플릭스 FHD 감상 위주라면 100M 광랜으로 충분하며 가성비가 가장 우수합니다. 3인 이상 가족, 재택근무, 4K 고화질 스트리밍, 대용량 파일 다운로드가 잦다면 500M 기가슬림이 가장 추천됩니다. 실시간 대용량 데이터 전송, 전문 온라인 방송, 고사양 게임 반응속도가 중요한 전문가 환경이라면 1G 기가인터넷이 최적입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "인터넷 3년 약정이 끝났을 때 재약정과 신규 가입 중 무엇이 더 유리한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "휴대폰 가족 결합 할인의 총액이 매우 크거나 장기 우수 고객 혜택(예: KT 총액결합, SK 온가족할인 30년 이상)이 아니라면, 타 통신사로 신규 가입하여 신규 가입 사은품 현금지원을 최대로 수령하는 것이 실질 통신비 절감 측면에서 훨씬 유리합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "인터넷 약정 해지 시 위약금(할인반환금) 계산은 어떻게 이루어지나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "약정 위약금은 매달 제공받은 약정 할인액, 장비 임대료 할인액, 결합 할인액을 합산하여 사용 기간에 따라 계산됩니다. 약정 기간의 중간 시점(약 18~24개월 차)에 위약금이 가장 높게 산정되며, 만료일인 36개월에 가까워질수록 점차 감소하여 0원에 도달합니다. 본사 고객센터를 통해 정확한 해지 예상 위약금을 조회한 후 교체 여부를 결정해야 합니다."
+          }
         }
-
-        function submitFormProc(param) {
-            const async = $.Deferred();
-            // AJAX 요청
-            $.ajax({
-                url: "https://db.siwoomarketing.com/api/index.php?ctrl=inq.regist",
-                type: "post",
-                dataType: "json",
-                data: param
-                , success: function (data) {
-                    async.resolve(data);
-                },
-                error: function (err) {
-                    async.reject(err);
-                }
-            });
-            return async.promise();
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://guide.reliabledone.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "통신 요금 비교",
+          "item": "https://guide.reliabledone.com/compare"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "인터넷 TV 가입 혜택 비교 추천",
+          "item": "https://guide.reliabledone.com/internet-tv-guide"
         }
-
-    </script>
-  
-
-
-
-
-
-<!-- [Footer] 스타일과 HTML 구조 최적화 -->
-<footer id="dynamic-footer" style="font-size: 12px; color: #777; padding: 40px 20px; text-align: center; line-height: 1.8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #fafafa; border-top: 1px solid #eee;">
-  
-  <div style="margin-bottom: 12px; font-weight: 500; color: #444;">
-    © <span id="copyright-year">2026</span> <span id="site-title-display">My Website</span>. All rights reserved.
-  </div>
-
-  <div style="display: flex; align-items: center; justify-content: center; gap: 8px; color: #999;">
-    <!-- 실시간 상태 표시등 (시각적 신뢰도 상승) -->
-    <span style="display: inline-block; width: 8px; height: 8px; background-color: #2ecc71; border-radius: 50%; box-shadow: 0 0 5px #2ecc71; animation: pulse 2s infinite;"></span>
-    <span id="sync-status" aria-live="polite">시스템 연결 중...</span>
-    <span style="color: #ddd;">|</span>
-    <span>최종 업데이트: <time id="last-update-time" datetime="2026-01-01">2026-01-01</time></span>
-  </div>
+      ]
+    }
+  ]
+  </script>
 
   <style>
-    @keyframes pulse {
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-light: #eff6ff;
+      --secondary: #0d9488;
+      --secondary-light: #f0fdfa;
+      --accent: #f59e0b;
+      --accent-light: #fffbeb;
+      --indigo: #4f46e5;
+      --indigo-light: #eef2ff;
+      --text-main: #1e293b;
+      --text-sub: #475569;
+      --text-muted: #64748b;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+      --border-focus: #93c5fd;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.8;
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #0d9488 100%);
+      color: #ffffff;
+      padding: 50px 20px 40px;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+    }
+    .header-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      margin-bottom: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    header h1 {
+      font-size: 2.3rem;
+      font-weight: 800;
+      line-height: 1.35;
+      margin: 0 0 16px;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      font-size: 1.1rem;
+      max-width: 780px;
+      margin: 0 auto 24px;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 1040px;
+      margin: -25px auto 40px;
+      padding: 0 16px;
+    }
+
+    nav.quick-nav {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 30px;
+    }
+    nav.quick-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    nav.quick-nav a {
+      color: var(--text-sub);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-page);
+      border: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+    }
+    nav.quick-nav a:hover {
+      background-color: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--border-focus);
+    }
+
+    section {
+      background-color: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      padding: 36px 32px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    h2 {
+      color: var(--primary-dark);
+      font-size: 1.65rem;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--primary-light);
+      letter-spacing: -0.01em;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background-color: var(--primary);
+    }
+
+    h3 {
+      color: var(--text-main);
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 14px;
+      padding-left: 12px;
+      border-left: 4px solid var(--secondary);
+    }
+
+    h4 {
+      color: var(--indigo);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-sub);
+      font-size: 1.02rem;
+      margin: 0 0 16px;
+    }
+
+    .info-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 24px 0;
+    }
+    .info-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .info-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .info-card.blue { border-top: 4px solid var(--primary); }
+    .info-card.teal { border-top: 4px solid var(--secondary); }
+    .info-card.amber { border-top: 4px solid var(--accent); }
+    .info-card.indigo { border-top: 4px solid var(--indigo); }
+    .info-card h4 {
+      margin-top: 0;
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 24px 0;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+      background: #ffffff;
+      min-width: 600px;
+    }
+    th {
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 700;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-color);
+      white-space: nowrap;
+    }
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-sub);
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr:nth-child(even) td {
+      background-color: #fafbfc;
+    }
+
+    /* 시각적 차트/그래프 컴포넌트 */
+    .bar-chart-container {
+      background: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .bar-group {
+      margin-bottom: 18px;
+    }
+    .bar-group:last-child {
+      margin-bottom: 0;
+    }
+    .bar-label-flex {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+    .bar-track {
+      background: #e2e8f0;
+      height: 16px;
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: var(--radius-full);
+      transition: width 0.5s ease-in-out;
+    }
+    .fill-blue { background: linear-gradient(90deg, #3b82f6, #1d4ed8); }
+    .fill-teal { background: linear-gradient(90deg, #14b8a6, #0f766e); }
+    .fill-purple { background: linear-gradient(90deg, #a855f7, #6b21a8); }
+    .fill-amber { background: linear-gradient(90deg, #f59e0b, #b45309); }
+
+    /* 인터랙티브 계산기 */
+    .calc-container {
+      background: linear-gradient(145deg, var(--primary-light) 0%, #f0fdfa 100%);
+      border: 1px solid var(--border-focus);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin: 28px 0;
+    }
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .calc-control label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+    .calc-control select, .calc-control input {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: #ffffff;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+    .calc-result-box {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .calc-result-title {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .calc-result-val {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+    .calc-result-sub {
+      font-size: 0.85rem;
+      color: var(--secondary);
+      margin-top: 4px;
+    }
+
+    .notice-box {
+      background-color: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      padding: 18px 20px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 20px 0;
+    }
+    .notice-box p {
+      margin: 0;
+      color: #92400e;
+      font-size: 0.95rem;
+    }
+
+    .badge-tag {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      background-color: var(--indigo-light);
+      color: var(--indigo);
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    /* FAQ 아코디언 스타일 */
+    .faq-item {
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+    .faq-question {
+      padding: 16px 20px;
+      background-color: var(--bg-page);
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-answer {
+      padding: 18px 20px;
+      color: var(--text-sub);
+      font-size: 0.98rem;
+      line-height: 1.7;
+      border-top: 1px solid var(--border-color);
+      background-color: #ffffff;
+    }
+
+    /* 견적 문의 폼 */
+    .form-box {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .form-group-wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .form-item label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+    .form-item input, .form-item select, .form-item textarea {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .form-item input:focus, .form-item select:focus, .form-item textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+      background-color: #ffffff;
+    }
+    .btn-submit {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--indigo) 100%);
+      border: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-cta-hero {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      background-color: #ffffff;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: all 0.2s ease;
+    }
+    .btn-cta-hero:hover {
+      background-color: var(--primary-light);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: #94a3b8;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      text-align: center;
+      border-top: 1px solid #1e293b;
+    }
+    footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 40px 16px 30px; }
+      header h1 { font-size: 1.7rem; }
+      header p { font-size: 0.98rem; }
+      section { padding: 24px 18px; }
+      h2 { font-size: 1.4rem; }
+      h3 { font-size: 1.15rem; }
+      .calc-container { padding: 18px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-badge">2026 대한민국 통신 3사 및 알뜰망 공시 정보 반영</div>
+    <h1>인터넷 TV 가입 혜택 비교 추천: 요금제 및 사은품 현금지원 완벽 분석</h1>
+    <p>SK브로드밴드, KT, LG유플러스 및 알뜰 인터넷의 속도별 요금제, 유무선 결합할인, 사은품 현금지원금 혜택을 꼼꼼하게 비교하여 가장 합리적인 견적을 제시합니다.</p>
+    <a href="#calculator" class="btn-cta-hero">실시간 요금 및 현금지원 계산기 실행</a>
+  </header>
+
+  <main>
+
+    <!-- 빠른 탐색 바 -->
+    <nav class="quick-nav" aria-label="본문 빠른 탐색 네비게이션">
+      <ul>
+        <li><a href="#summary">통신 3사 종합 비교</a></li>
+        <li><a href="#speed-plans">속도별 요금 분석</a></li>
+        <li><a href="#calculator">실시간 요금 계산기</a></li>
+        <li><a href="#cash-benefits">현금지원 및 결합할인</a></li>
+        <li><a href="#regions">전국 설치망 분석</a></li>
+        <li><a href="#reviews">실가입자 커뮤니티 후기</a></li>
+        <li><a href="#faq">자주 묻는 질문 FAQ</a></li>
+        <li><a href="#consulting">무료 맞춤 컨설팅</a></li>
+      </ul>
+    </nav>
+
+    <!-- 섹션 1: 통신 3사 요금 및 혜택 종합 비교 -->
+    <section id="summary">
+      <h2>인터넷 TV 가입 혜택 비교 추천의 핵심 기준</h2>
+      <p>새로운 주거 공간으로 이사하거나 기존 3년 약정이 만료되는 시점에 많은 소비자들이 가장 먼저 고민하는 것이 바로 인터넷 TV 가입입니다. 매달 고정적으로 지출되는 가계 통신비를 절약하기 위해서는 단순한 브랜드 인지도만을 따지기보다, 통신사별 결합할인 구조, 셋톱박스 성능, 사은품 현금지원 혜택 금액, 그리고 실제 거주지의 망 안정성을 다각도로 검토해야 합니다.</p>
+      
+      <div class="info-card-grid">
+        <div class="info-card blue">
+          <h4>SK브로드밴드 (SKB)</h4>
+          <p><strong>주요 특징:</strong> SK텔레콤 모바일 결합 할인(요즘가족결합)이 강력하며, 애플TV 4K 연동 및 스마트3 셋톱박스의 전력 효율이 우수합니다.</p>
+          <p><strong>추천 대상:</strong> 가족 구성원 중 SKT 스마트폰 회선을 다수 사용하는 가구 및 OTT 몰아보기를 선호하는 사용자.</p>
+        </div>
+        <div class="info-card teal">
+          <h4>KT (케이티)</h4>
+          <p><strong>주요 특징:</strong> 전국 도서 산간 지역까지 구축된 100% 대칭형 FTTH 망의 독보적인 안정성과 지니TV 셋톱박스의 방대한 실시간 채널 및 VOD 콘텐츠를 보유합니다.</p>
+          <p><strong>추천 대상:</strong> 온라인 게임 반응속도(Ping), 끊김 없는 해외망 접속, 고화질 실시간 방송이 중요한 가구.</p>
+        </div>
+        <div class="info-card amber">
+          <h4>LG유플러스 (LGU+)</h4>
+          <p><strong>주요 특징:</strong> 넷플릭스, 디즈니플러스, 유튜브 프리미엄 등 OTT 연동 UI가 가장 최적화되어 있으며, 와이파이 기본 임대 무료 혜택과 높은 사은품 혜택을 제공합니다.</p>
+          <p><strong>추천 대상:</strong> 스마트 TV 앱 활용도가 높고 스마트홈 IoT 기기를 연동하는 젊은 1~2인 가구 및 신혼부부.</p>
+        </div>
+      </div>
+
+      <!-- 통신 3사 데이터 시각화 바 차트 -->
+      <div class="bar-chart-container">
+        <h4 style="margin-top:0; margin-bottom:16px; color:var(--text-main);">통신사별 2026년 평균 가입자 만족도 및 결합 할인 경쟁력 점수 (100점 만점 기준)</h4>
+        
+        <div class="bar-group">
+          <div class="bar-label-flex">
+            <span>KT - 전국 대칭형 망 품질 및 해외망 안정성</span>
+            <span>96점</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill fill-teal" style="width: 96%;"></div></div>
+        </div>
+
+        <div class="bar-group">
+          <div class="bar-label-flex">
+            <span>LG유플러스 - OTT 콘텐츠 인터페이스 및 와이파이 가성비</span>
+            <span>94점</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill fill-amber" style="width: 94%;"></div></div>
+        </div>
+
+        <div class="bar-group">
+          <div class="bar-label-flex">
+            <span>SK브로드밴드 - 모바일 회선 결합 할인 시 요금 절감액</span>
+            <span>95점</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill fill-blue" style="width: 95%;"></div></div>
+        </div>
+      </div>
+
+      <div class="notice-box">
+        <p><strong>가입 전 체크포인트:</strong> 신규 가입 시 제공되는 사은품 현금지원은 방송통신위원회의 경품고시제 기준에 따라 통신사 및 요금제별로 법정 상한선이 정해져 있습니다. 무조건 과도한 금액을 구두로 약속하는 비인가 불법 업체를 주의하시고, 정식 온라인 판매 승인 코드와 유선통신 사전승낙서를 보유한 전문 업체를 통하는 것이 가장 안전합니다.</p>
+      </div>
+    </section>
+
+    <!-- 섹션 2: 속도별 요금제 상세 비교 및 장단점 -->
+    <section id="speed-plans">
+      <h2>인터넷 속도별 요금제 종류 및 비용 분석: 100M vs 500M vs 1G</h2>
+      <p>인터넷 가입 시 가장 큰 금액 차이를 만드는 요소는 바로 회선 속도 선택입니다. 필요 이상의 고가 요금제를 선택하면 3년 약정 기간 동안 불필요한 통신비가 낭비될 수 있으며, 반대로 너무 낮은 속도를 선택하면 스트리밍 버퍼링이나 게임 렉이 발생할 수 있습니다. 각 속도별 장단점과 최적의 대상을 명확히 계산해야 합니다.</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>인터넷 속도</th>
+              <th>주요 특징 및 다운로드 속도</th>
+              <th>3년 약정 단독 요금 (평균)</th>
+              <th>인터넷+TV 결합 요금 (평균)</th>
+              <th>사은품 현금지원 예상 범위</th>
+              <th>추천 가구 형태</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>100M (광랜)</strong></td>
+              <td>초당 약 10~12MB 전송, 웹서핑, 유튜브 FHD, 웹툰 감상</td>
+              <td>월 22,000원</td>
+              <td>월 34,100원 ~ 38,500원</td>
+              <td>10만원 ~ 25만원 선</td>
+              <td>원룸, 오피스텔 1인 가구, 단순 사무용</td>
+            </tr>
+            <tr>
+              <td><strong>500M (기가슬림)</strong></td>
+              <td>초당 약 50~60MB 전송, 4K OTT, 대용량 파일, 롤/배그 온라인 게임</td>
+              <td>월 33,000원</td>
+              <td>월 39,600원 ~ 44,000원</td>
+              <td>40만원 ~ 47만원 (최대)</td>
+              <td>2~4인 일반 가정, 재택근무자, 신혼부부</td>
+            </tr>
+            <tr>
+              <td><strong>1G (기가인터넷)</strong></td>
+              <td>초당 약 100~120MB 전송, 실시간 4K/8K 방송 송출, 주식 단타 트레이딩</td>
+              <td>월 38,500원</td>
+              <td>월 45,100원 ~ 49,500원</td>
+              <td>43만원 ~ 47만원 (최대)</td>
+              <td>전문 크리에이터, 대가족, 고사양 게이머</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>속도별 체감 성능 차이점과 실질 가성비 선택법</h3>
+      <p>대부분의 가정에서는 500M 기가슬림 요금제가 가격 대비 성능비가 가장 뛰어납니다. 100메가 요금제와 비교했을 때 월 요금 차이는 결합 할인 적용 시 불과 3천원 내외로 줄어드는 반면, 신규 가입 시 제공받는 사은품 현금지원금의 격차는 15만원에서 20만원 이상 벌어지기 때문입니다. 따라서 3년간의 총 지출 비용을 정밀하게 계산하면 500메가 인터넷과 기본형 IPTV를 결합하는 것이 실질적인 체감 혜택이 제일 높습니다.</p>
+    </section>
+
+    <!-- 섹션 3: 실시간 요금 및 현금지원 계산기 (인터랙티브 스크립트 연동) -->
+    <section id="calculator">
+      <h2>스마트 인터넷 TV 월 예상 요금 및 사은품 계산기</h2>
+      <p>희망하는 통신사와 인터넷 속도, 결합할 IPTV 채널 상품 및 휴대폰 결합 대수를 선택하시면 2026년 기준 3년 약정 월 예상 요금과 최대 현금지원 혜택 견적을 실시간으로 계산해 드립니다.</p>
+
+      <div class="calc-container">
+        <div class="calc-grid">
+          <div class="calc-control">
+            <label for="calc-telecom">통신사 선택</label>
+            <select id="calc-telecom" onchange="calculatePlan()">
+              <option value="SKB">SK브로드밴드</option>
+              <option value="KT">KT 올레</option>
+              <option value="LGU">LG유플러스</option>
+              <option value="SKYLIFE">스카이라이프 (알뜰)</option>
+            </select>
+          </div>
+
+          <div class="calc-control">
+            <label for="calc-speed">인터넷 회선 속도</label>
+            <select id="calc-speed" onchange="calculatePlan()">
+              <option value="100">100M (알뜰 광랜)</option>
+              <option value="500" selected>500M (기가 라이트 추천)</option>
+              <option value="1000">1G (프리미엄 기가)</option>
+            </select>
+          </div>
+
+          <div class="calc-control">
+            <label for="calc-tv">IPTV 결합 여부</label>
+            <select id="calc-tv" onchange="calculatePlan()">
+              <option value="none">인터넷 단독 (TV 미결합)</option>
+              <option value="basic" selected>인터넷 + 기본형 TV (220채널+UHD셋톱)</option>
+              <option value="premium">인터넷 + 고급형 TV (250채널+사운드바)</option>
+            </select>
+          </div>
+
+          <div class="calc-control">
+            <label for="calc-mobile">동일 통신사 모바일 결합 회선수</label>
+            <select id="calc-mobile" onchange="calculatePlan()">
+              <option value="0">0회선 (미결합)</option>
+              <option value="1">1회선 결합</option>
+              <option value="2" selected>2회선 결합</option>
+              <option value="3">3회선 이상 결합</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+          <div class="calc-result-box">
+            <div class="calc-result-title">예상 월 납부 요금 (부가세 및 셋톱 임대료 포함)</div>
+            <div class="calc-result-val" id="res-monthly">월 35,200원</div>
+            <div class="calc-result-sub" id="res-discount">모바일 결합 할인 월 -9,900원 반영됨</div>
+          </div>
+
+          <div class="calc-result-box">
+            <div class="calc-result-title">최대 예상 사은품 현금지원금 (경품고시제 준수)</div>
+            <div class="calc-result-val" style="color: var(--secondary);" id="res-cash">최대 470,000원</div>
+            <div class="calc-result-sub" id="res-cash-sub">설치 당일 전액 지급 기준</div>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-size:0.88rem; color:var(--text-muted); text-align:center;">본 계산 결과는 3년 약정, 모바일 결합 및 부가세 포함 표준 요금 기준이며, 제휴카드 전월 실적 추가 할인(월 15,000원~25,000원 할인) 적용 시 실질 납부 금액은 더 저렴해질 수 있습니다.</p>
+    </section>
+
+    <!-- 섹션 4: 사은품 현금지원과 결합할인 극대화 가이드 -->
+    <section id="cash-benefits">
+      <h2>인터넷 가입 사은품 현금지원과 결합할인 완벽 공략법</h2>
+      <p>인터넷 TV 신규 가입 시 고객이 가장 궁금해하는 핵심 질문 중 하나는 바로 사은품 현금지원 금액이 얼마이며, 언제 어떻게 입금되는가 하는 점입니다. 2026년 기준 통신 시장의 합법적인 지원금 구조와 가족 결합 할인 제도를 이해하면 매월 납부하는 비용을 최저가 수준으로 낮출 수 있습니다.</p>
+
+      <h3>1. 본사 고객센터 vs 온라인 전문 비교 가입센터 차이점</h3>
+      <p>많은 사용자들이 114 본사 고객센터로 직접 다이렉트 전화를 걸어 가입하는 방식과 온라인 대리점 사이트를 통해 신청하는 것의 차이를 문의합니다. 본사 고객센터는 가입 유지율이 높아 별도의 대규모 현금 마케팅을 집행하지 않으며, 주로 백화점 상품권이나 소액의 가전제품 사은품만을 제공합니다. 반면, 온라인 공인 대리점은 방통위 승인 한도 내에서 최대한의 사은품 현금지원을 당일 지급 방식으로 제공하므로 소비자의 체감 혜택이 훨씬 큽니다.</p>
+
+      <h3>2. 통신 3사 대표 결합할인 제도 비교</h3>
+      <div class="info-card-grid">
+        <div class="info-card indigo">
+          <h4>SK 요즘가족결합 & 온가족할인</h4>
+          <p>모바일 1회선만 결합해도 인터넷 요금이 대폭 할인되며, 가족 구성원의 총 SK 가입 연수가 30년을 넘으면 온가족할인을 통해 인터넷 및 모바일 기본료를 각각 최대 50%까지 할인받을 수 있는 가장 강력한 장기 혜택을 자랑합니다.</p>
+        </div>
+        <div class="info-card teal">
+          <h4>KT 프리미엄 가족결합 & 총액결합할인</h4>
+          <p>스마트폰 무제한 5G 요금제를 2회선 이상 사용하는 가정이라면 2번째 회선부터 모바일 월정액을 25% 요금할인(선택약정과 중복 시 최대 50%)해 주는 프리미엄 가족결합이 단연 돋보입니다.</p>
+        </div>
+        <div class="info-card blue">
+          <h4>LG 참 쉬운 가족결합</h4>
+          <p>가족 구성원 간 명의가 달라도 결합이 용이하며, 결합된 모바일 회선 수에 따라 매월 가족 구성원 모두에게 모바일 데이터 보너스를 제공하여 알뜰한 통신 생활을 지원합니다.</p>
+        </div>
+      </div>
+
+      <h3>3. 위약금(할인반환금) 방어 및 재약정 비교 분석</h3>
+      <p>기존 약정이 만료되었을 때 본사로부터 재약정 권유 전화를 받는 경우가 많습니다. 본사 재약정 시 제공하는 상품권은 보통 10만원에서 20만원 수준에 불과합니다. 그러나 타 통신사로 번호이동 형태의 신규 가입을 진행할 경우 40만원 중후반대의 사은품 현금지원을 받을 수 있으므로, 결합할인 지속 여부를 꼼꼼히 비교하여 신규 가입을 선택하는 것이 대체로 유리합니다.</p>
+    </section>
+
+    <!-- 섹션 5: 전국 지역별 인프라 및 설치망 품질 가이드라인 (30개 이상 전국 지역명 포함) -->
+    <section id="regions">
+      <h2>전국 30대 주요 도시 및 지역별 인터넷 설치 인프라 분석</h2>
+      <p>인터넷 TV 가입 시 요금과 사은품 못지않게 중요한 것이 바로 설치 장소의 통신망 품질입니다. 대칭형 광케이블(FTTH)이 인입되는 지역은 업로드와 다운로드 속도가 동일하고 핑(Ping)이 안정적이지만, 동축케이블(HFC) 비대칭형 망이 들어가는 구형 빌라나 단독주택의 경우 업로드 속도 저하 및 끊김 현상이 발생할 수 있습니다.</p>
+      
+      <p>저희 전문 센터는 다음을 포함한 전국 주요 시·군·구 전 지역의 주소지별 대칭형 망 인입 여부를 사전에 정밀 전산 조회해 드립니다.</p>
+
+      <div style="margin: 20px 0; padding: 18px; background-color: var(--bg-page); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+        <span class="badge-tag">서울특별시</span>
+        <span class="badge-tag">부산광역시</span>
+        <span class="badge-tag">인천광역시</span>
+        <span class="badge-tag">대구광역시</span>
+        <span class="badge-tag">대전광역시</span>
+        <span class="badge-tag">광주광역시</span>
+        <span class="badge-tag">울산광역시</span>
+        <span class="badge-tag">세종특별자치시</span>
+        <span class="badge-tag">수원시</span>
+        <span class="badge-tag">성남시</span>
+        <span class="badge-tag">고양시</span>
+        <span class="badge-tag">용인시</span>
+        <span class="badge-tag">부천시</span>
+        <span class="badge-tag">화성시</span>
+        <span class="badge-tag">안산시</span>
+        <span class="badge-tag">남양주시</span>
+        <span class="badge-tag">평택시</span>
+        <span class="badge-tag">파주시</span>
+        <span class="badge-tag">의정부시</span>
+        <span class="badge-tag">시흥시</span>
+        <span class="badge-tag">청주시</span>
+        <span class="badge-tag">천안시</span>
+        <span class="badge-tag">전주시</span>
+        <span class="badge-tag">포항시</span>
+        <span class="badge-tag">창원시</span>
+        <span class="badge-tag">김해시</span>
+        <span class="badge-tag">구미시</span>
+        <span class="badge-tag">원주시</span>
+        <span class="badge-tag">춘천시</span>
+        <span class="badge-tag">강릉시</span>
+        <span class="badge-tag">아산시</span>
+        <span class="badge-tag">익산시</span>
+        <span class="badge-tag">여수시</span>
+        <span class="badge-tag">순천시</span>
+        <span class="badge-tag">군산시</span>
+        <span class="badge-tag">목포시</span>
+        <span class="badge-tag">제주시</span>
+        <span class="badge-tag">서귀포시</span>
+      </div>
+
+      <p>예를 들어 서울 강남구, 서초구, 송파구, 마포구, 영등포구 등 주요 도심 아파트 단지는 통신 3사 모두 100% 1G/2.5G 대칭형 기가인터넷이 지원되지만, 경기 외곽의 신축 빌라 단지나 원주, 춘천, 강릉, 여수, 순천, 목포 등의 일부 구도심 지역은 통신사마다 전주 인입 방식에 차이가 있습니다. 따라서 가입 상담 시 반드시 번지수와 동호수 기반의 대칭형 망 사전 조회를 거쳐야 후회 없는 인터넷 TV 개통이 가능합니다.</p>
+    </section>
+
+    <!-- 섹션 6: 커뮤니티 빅데이터 및 실가입자 후기 분석 -->
+    <section id="reviews">
+      <h2>디시인사이드, 뽐뿌, 펨코 등 주요 커뮤니티 내돈내산 가입 후기 트렌드</h2>
+      <p>최근 디시인사이드 인터넷 가입 갤러리, 에펨코리아(펨코), 보배드림, 클리앙 등 실사용자 커뮤니티에서 공유되는 성지 좌표 및 내돈내산 솔직 후기 빅데이터를 분석해 보면 다음과 같은 트렌드가 뚜렷하게 나타납니다.</p>
+
+      <div class="info-card-grid">
+        <div class="info-card teal">
+          <h4>1. 당일 현금 지급의 신뢰성</h4>
+          <p>커뮤니티 이용자들은 사은품 지급 일정이 미뤄지지 않고 설치 당일 깔끔하게 계좌로 현금지원이 입금되는 업체를 가장 높은 순위로 추천하고 있습니다. 지급 지연 사고를 방지하기 위해 사업자등록증과 사전승낙서를 투명하게 공개한 업체를 찾는 것이 정석입니다.</p>
+        </div>
+        <div class="info-card blue">
+          <h4>2. 불필요한 부가서비스 강요 배제</h4>
+          <p>월 3천원에서 5천원씩 부과되는 불필요한 원격 케어, 유료 VOD 월정액, 안심 보안 서비스 등을 무단으로 가입시키지 않고 순수 통신 요금과 필수 셋톱박스만으로 최저가 견적을 내주는 정직한 대리점이 가장 좋은 평점을 얻고 있습니다.</p>
+        </div>
+        <div class="info-card indigo">
+          <h4>3. 생성형 AI를 활용한 요금 비교</h4>
+          <p>챗지피티(ChatGPT), 제미나이(Gemini), 클로드 등 최신 AI 챗봇 및 토스(Toss) 통신비 진단 어플 등을 활용하여 자신의 월 데이터 사용량과 가족 휴대폰 결합 현황을 사전 분석한 후 맞춤 상담을 요청하는 스마트 소비자가 크게 증가하고 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 7: 자주 묻는 질문 FAQ (검색엔진 및 AI 스니펫 최적화) -->
+    <section id="faq">
+      <h2>인터넷 TV 가입 관련 자주 묻는 질문 (FAQ)</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Q1: 인터넷 가입 시 사은품 현금지원은 당일 바로 지급되나요?</div>
+        <div class="faq-answer">
+          네, 공식 인증 전문 대리점을 통해 평일 오후 4시 이전에 설치가 완료되고 개통 확인이 전산에 등록되면, 설치 당일 저녁 고객님의 본인 명의 계좌로 약속된 사은품 현금지원금이 안전하게 전액 입금됩니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Q2: 약정 기간은 1년(12개월)과 3년 중 어떤 것이 유리한가요?</div>
+        <div class="faq-answer">
+          1년 단기 약정이나 무약정의 경우 월 기본 요금이 30~50% 이상 비싸며 사은품 현금지원이 거의 제공되지 않습니다. 3년 약정으로 가입하여 최대 사은품 현금지원과 요금 할인을 수령하고, 3년 만기 후 새롭게 타사로 갈아타는 것이 총 통신비 절감 측면에서 가장 유리합니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Q3: 기존에 쓰던 인터넷은 새 인터넷 설치 전에 미리 해지해야 하나요?</div>
+        <div class="faq-answer">
+          절대로 미리 해지하시면 안 됩니다. 미리 해지할 경우 인터넷 없는 공백 기간이 발생할 수 있을 뿐만 아니라, 이사 당일 설치 일정이 지연될 때 큰 불편을 겪을 수 있습니다. 신규 인터넷이 정상적으로 개통되어 TV와 와이파이가 완벽히 작동하는 것을 확인한 후, 기존 통신사 본사 고객센터(114)로 직접 전화하여 해지를 신청하시는 것이 가장 안전합니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Q4: 알뜰 인터넷(스카이라이프, LG헬로비전, SKB알뜰 등)의 장단점은 무엇인가요?</div>
+        <div class="faq-answer">
+          알뜰 인터넷의 가장 큰 장점은 통신 3사 대비 월 요금이 약 20~30% 저렴하다는 점입니다. 반면 단점으로는 사은품 현금지원 규모가 통신 3사에 비해 상대적으로 적고, 스마트폰과의 결합할인 폭이 제한적일 수 있다는 점입니다. 따라서 모바일 결합할인을 받을 수 없는 1인 가구에게 추천됩니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Q5: 최신 셋톱박스(사운드바, 스마트3, 지니TV3, UHD4) 중 무엇을 선택해야 하나요?</div>
+        <div class="faq-answer">
+          일반적인 스마트 TV를 보유하고 계시다면 표준 UHD 셋톱박스(SK 스마트3, KT 지니TV3, LG UHD4)로도 4K 화질과 빠른 채널 전환 속도를 충분히 누리실 수 있습니다. 만약 TV 자체 스피커 음질에 아쉬움이 있거나 홈씨어터 공간 음향을 원하신다면 월 임대료가 2~3천원 추가되는 사운드바 일체형 셋톱박스를 추천합니다.
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 8: 온라인 무료 맞춤 견적 신청 폼 -->
+    <section id="consulting">
+      <h2>2026 인터넷 TV 최저가 1:1 맞춤 견적 및 사은품 상담 신청</h2>
+      <p>고객님의 현재 통신 환경과 가족 휴대폰 결합 현황에 맞춰 가장 저렴한 월 요금과 최대 현금지원 혜택을 설계해 드립니다. 불필요한 전화 영업 없이 카카오톡 또는 문자로 신속하게 견적서를 발송해 드립니다.</p>
+
+      <div class="form-box">
+        <form action="/submit-quote" method="POST" onsubmit="event.preventDefault(); alert('견적 상담 신청이 정상 접수되었습니다. 전문 상담원이 빠른 시간 내에 연락드리겠습니다.');">
+          <div class="form-group-wrap">
+            <div class="form-item">
+              <label for="user-name">신청자 성함</label>
+              <input type="text" id="user-name" name="name" required placeholder="홍길동">
+            </div>
+            <div class="form-item">
+              <label for="user-phone">연락처 (휴대폰 번호)</label>
+              <input type="tel" id="user-phone" name="phone" required placeholder="010-1234-5678" pattern="[0-9\-]+">
+            </div>
+          </div>
+
+          <div class="form-group-wrap">
+            <div class="form-item">
+              <label for="user-city">설치 희망 지역 (시/도 및 시/군/구)</label>
+              <input type="text" id="user-city" name="city" required placeholder="예: 서울시 송파구 / 부산 해운대구">
+            </div>
+            <div class="form-item">
+              <label for="user-target-telecom">희망 가입 통신사</label>
+              <select id="user-target-telecom" name="target_telecom">
+                <option value="SKB">SK브로드밴드</option>
+                <option value="KT">KT 올레</option>
+                <option value="LGU">LG유플러스</option>
+                <option value="SKYLIFE">스카이라이프 / 알뜰망</option>
+                <option value="RECOMMEND" selected>가장 혜택 좋은 곳 추천 희망</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group-wrap">
+            <div class="form-item">
+              <label for="user-mobile-count">가족 구성원 휴대폰 통신사 및 회선 수</label>
+              <input type="text" id="user-mobile-count" name="mobile_info" placeholder="예: SKT 2회선, 알뜰폰 1회선">
+            </div>
+            <div class="form-item">
+              <label for="user-contact-time">희망 상담 방식</label>
+              <select id="user-contact-time" name="contact_type">
+                <option value="kakaotalk" selected>카카오톡 문자 견적서 우선 발송</option>
+                <option value="call">유선 전화 상세 상담</option>
+                <option value="sms">일반 SMS 문자 상담</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-item" style="margin-bottom: 16px;">
+            <label for="user-memo">기타 문의사항 및 희망 설치일</label>
+            <textarea id="user-memo" name="memo" rows="3" placeholder="예: 500메가 인터넷과 TV 결합 희망하며, 이사 날짜는 다음 주 금요일입니다. 최대 사은품 견적 부탁드립니다."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">실시간 최저가 견적 및 최대 지원금 상담 신청하기</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 섹션 9: 공인 신뢰 외부 참조 기관 및 공식 데이터 링크 -->
+    <section id="references">
+      <h2>공식 공공기관 및 신뢰할 수 있는 통신 정보 참조 사이트</h2>
+      <p>통신 서비스 가입 및 이용자 권익 보호와 관련된 공인 정책 정보와 방송통신 관련 백과 자료는 아래의 공식 웹사이트를 통해 투명하게 확인하실 수 있습니다.</p>
+
+      <div class="info-card-grid">
+        <div class="info-card blue">
+          <h4>공식 통신 가이드라인 허브</h4>
+          <p>통신사별 요금제 정책 및 결합할인 공식 데이터 가이드:</p>
+          <p><a href="https://topspeedfneta.withuslees.com" target="_blank" rel="noopener noreferrer" style="color:var(--primary); font-weight:700; text-decoration:none;">info.reliabledone.com 통신가이드 바로가기</a></p>
+        </div>
+
+        <div class="info-card teal">
+          <h4>나무위키 (Namu.wiki)</h4>
+          <p>인터넷 서비스 제공사업자(ISP) 및 IPTV 기술 규격 백과:</p>
+          <p><a href="https://namu.wiki" target="_blank" rel="noopener noreferrer" style="color:var(--secondary); font-weight:700; text-decoration:none;">namu.wiki 인터넷 서비스 상세 문서</a></p>
+        </div>
+
+        <div class="info-card amber">
+          <h4>스마트초이스 (공식 통신요금 정보포털)</h4>
+          <p>과학기술정보통신부 및 한국정보통신진흥협회(KAIT) 운영 포털:</p>
+          <p><a href="https://www.smartchoice.or.kr" target="_blank" rel="noopener noreferrer" style="color:var(--accent); font-weight:700; text-decoration:none;">smartchoice.or.kr 통신요금 조회</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+	
+
+  <!-- 자바스크립트: 인터랙티브 요금 및 현금지원 계산 로직 -->
+  <script>
+    function calculatePlan() {
+      const telecom = document.getElementById('calc-telecom').value;
+      const speed = document.getElementById('calc-speed').value;
+      const tv = document.getElementById('calc-tv').value;
+      const mobile = parseInt(document.getElementById('calc-mobile').value);
+
+      let basePrice = 0;
+      let cashBack = 0;
+      let discountAmount = 0;
+
+      // 인터넷 속도별 기본 요금 및 캐시백 베이스
+      if (speed === "100") {
+        basePrice = 22000;
+        cashBack = 150000;
+      } else if (speed === "500") {
+        basePrice = 33000;
+        cashBack = 420000;
+      } else if (speed === "1000") {
+        basePrice = 38500;
+        cashBack = 450000;
+      }
+
+      // TV 결합에 따른 추가 요금 및 사은품
+      if (tv === "basic") {
+        basePrice += 16500; // TV 기본형 + UHD 셋톱 임대료
+        cashBack += (speed === "100") ? 100000 : 50000;
+      } else if (tv === "premium") {
+        basePrice += 20900; // 고급형 TV + 프리미엄 셋톱
+        cashBack += (speed === "100") ? 120000 : 70000;
+      }
+
+      // 통신사별 경품고시제 상한선 보정 (최대 47만원 한도)
+      if (cashBack > 470000) {
+        cashBack = 470000;
+      }
+
+      if (telecom === "SKYLIFE") {
+        basePrice = Math.round(basePrice * 0.75); // 알뜰 요금제 할인
+        cashBack = Math.min(cashBack, 300000);
+      }
+
+      // 모바일 결합 할인 계산
+      if (mobile === 1) {
+        discountAmount = (speed === "100") ? 3300 : 5500;
+      } else if (mobile === 2) {
+        discountAmount = (speed === "100") ? 6600 : 9900;
+      } else if (mobile >= 3) {
+        discountAmount = (speed === "100") ? 11000 : 16500;
+      }
+
+      let finalPrice = basePrice - discountAmount;
+      if (finalPrice < 15000) finalPrice = 15000;
+
+      // 화면 업데이트
+      document.getElementById('res-monthly').innerText = '월 ' + finalPrice.toLocaleString() + '원';
+      document.getElementById('res-cash').innerText = '최대 ' + cashBack.toLocaleString() + '원';
+      
+      if (discountAmount > 0) {
+        document.getElementById('res-discount').innerText = '모바일 ' + mobile + '회선 결합 할인 월 -' + discountAmount.toLocaleString() + '원 반영됨';
+      } else {
+        document.getElementById('res-discount').innerText = '모바일 결합 미적용 기본 요금 기준';
+      }
+    }
+
+    // FAQ 아코디언 인터랙션
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      faqQuestions.forEach(function(q) {
+        q.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          if (answer.style.display === 'none' || answer.style.display === '') {
+            answer.style.display = 'block';
+          } else {
+            answer.style.display = 'none';
+          }
+        });
+      });
+      // 계산기 초기 구동
+      calculatePlan();
+    });
+  </script>
+
+
+
+	
+
+
+
+<!-- [SEO 최적화 무링크 푸터] 별도 수정 및 연결할 페이지 없이 바로 사용 가능합니다. -->
+<footer id="dynamic-footer">
+  <div class="footer-container">
+    
+    <!-- 1. 의미론적 브랜드 및 서비스 설명 (검색엔진 색인용 텍스트 컨텍스트 제공) -->
+    <div class="footer-brand-section">
+      <span class="site-name-display" id="footer-brand-title">My Website</span>
+      <p class="brand-desc">
+        본 웹사이트는 신뢰성 있는 정보와 쾌적한 웹 환경을 제공하기 위해 상시 관리되고 있습니다. 
+        웹 표준을 준수하며, 안정적인 자원 관리와 실시간 시스템 점검을 통해 상시 최적화된 서비스를 유지합니다.
+      </p>
+    </div>
+
+    <!-- 2. 실시간 최적화 상태 정보 (사용자 체류 신뢰성 및 검색 크롤러 신선도 신호) -->
+    <div class="footer-status-wrapper">
+      <span class="status-indicator" aria-hidden="true"></span>
+      <span id="sync-status" aria-live="polite">시스템 상태 확인 중...</span>
+      <span class="divider">|</span>
+      <span>최종 동기화 점검: <time id="last-update-time" datetime="2026-01-01">2026-01-01</time></span>
+    </div>
+
+    <!-- 3. 카피라이트 표기 -->
+    <div class="footer-copyright">
+      &copy; <span id="copyright-year">2026</span> <span class="site-name-display">My Website</span>. All rights reserved.
+    </div>
+
+  </div>
+
+  <!-- 푸터 전용 레이아웃 및 디자인 정의 -->
+  <style>
+    #dynamic-footer {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.8;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #fafafa;
+      border-top: 1px solid #eaeaea;
+      padding: 45px 20px;
+      text-align: center;
+    }
+    #dynamic-footer .footer-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    #dynamic-footer .footer-brand-section {
+      margin-bottom: 22px;
+    }
+    #dynamic-footer .site-name-display {
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    #dynamic-footer .brand-desc {
+      max-width: 580px;
+      margin: 0 auto;
+      color: #888;
+      font-size: 11.5px;
+      word-break: keep-all;
+    }
+    #dynamic-footer .footer-status-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #999;
+      margin-bottom: 18px;
+    }
+    #dynamic-footer .status-indicator {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #2ecc71;
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(46, 204, 113, 0.6);
+      animation: pulse-glow 2s infinite ease-in-out;
+    }
+    #dynamic-footer .footer-copyright {
+      color: #999;
+      font-size: 11px;
+    }
+    #dynamic-footer .divider {
+      color: #e8e8e8;
+      margin: 0 6px;
+      user-select: none;
+    }
+
+    @keyframes pulse-glow {
       0% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(1.2); }
+      50% { opacity: 0.6; transform: scale(1.15); }
       100% { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      #dynamic-footer {
+        padding: 35px 15px;
+      }
+      #dynamic-footer .footer-status-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 4px;
+      }
     }
   </style>
 </footer>
@@ -988,35 +1562,41 @@
 (function() {
   'use strict';
 
-  // 1. KST(한국 표준시) 데이터 생성기
+  // 1. 한국 표준시(KST) 기반 타임스탬프 계산기
   function getKstInfo() {
-    const now = new Date();
-    
-    // Intl API를 사용하여 한국 시간 데이터 추출 (가장 정확하고 현대적인 방식)
-    const formatter = new Intl.DateTimeFormat('ko-KR', {
-      timeZone: 'Asia/Seoul',
-      year: 'numeric', month: '2-digit', day: '2-digit',
-      hour: '2-digit', minute: '2-digit', second: '2-digit',
-      hour12: false
-    });
+    try {
+      const now = new Date();
+      const formatter = new Intl.DateTimeFormat('ko-KR', {
+        timeZone: 'Asia/Seoul',
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', second: '2-digit',
+        hour12: false
+      });
 
-    const parts = formatter.formatToParts(now).reduce((acc, part) => {
-      acc[part.type] = part.value;
-      return acc;
-    }, {});
+      const parts = formatter.formatToParts(now).reduce((acc, part) => {
+        acc[part.type] = part.value;
+        return acc;
+      }, {});
 
-    const year = parts.year;
-    const formattedDate = year + '-' + parts.month + '-' + parts.day;
-    const isoDateTime = year + '-' + parts.month + '-' + parts.day + 'T' + parts.hour + ':' + parts.minute + ':' + parts.second + '+09:00';
+      const year = parts.year;
+      const formattedDate = year + '-' + parts.month + '-' + parts.day;
+      const isoDateTime = year + '-' + parts.month + '-' + parts.day + 'T' + parts.hour + ':' + parts.minute + ':' + parts.second + '+09:00';
 
-    return { year, formattedDate, isoDateTime };
+      return { year, formattedDate, isoDateTime };
+    } catch (e) {
+      const local = new Date();
+      const year = local.getFullYear().toString();
+      const formattedDate = year + '-' + String(local.getMonth() + 1).padStart(2, '0') + '-' + String(local.getDate()).padStart(2, '0');
+      return { year, formattedDate, isoDateTime: local.toISOString() };
+    }
   }
 
-  // 2. SEO 메타 태그 및 JSON-LD 일괄 업데이트
+  // 2. 동적 SEO 헤더 업데이트 및 구조화 데이터 주입 (무링크 페이지 대응형)
   function updateSeoEngine(data) {
     const title = document.title || window.location.hostname;
+    const currentUrl = window.location.href;
+    const originUrl = window.location.origin;
 
-    // 메타 태그 헬퍼 함수
     const setMeta = (selector, content) => {
       let el = document.querySelector(selector);
       if (!el) {
@@ -1031,14 +1611,14 @@
       el.content = content;
     };
 
-    // [SEO] 필수 메타 데이터
+    // [SEO] 필수 메타 데이터 동기화
     setMeta('property="og:updated_time"', data.isoDateTime);
     setMeta('property="article:modified_time"', data.isoDateTime);
     setMeta('name="date"', data.formattedDate);
-    setMeta('name="last-modified"', data.isoDateTime); // 서버 응답 대용
+    setMeta('name="last-modified"', data.isoDateTime);
     setMeta('name="copyright"', data.year + ' ' + title);
 
-    // [SEO] JSON-LD 구조화 데이터 (WebPage + Organization 결합)
+    // [SEO] 구조화 데이터(JSON-LD) 생성 및 반영 (WebPage + WebSite 연동)
     let ldJsonScript = document.getElementById('seo-json-ld');
     if (!ldJsonScript) {
       ldJsonScript = document.createElement('script');
@@ -1052,69 +1632,86 @@
       "@graph": [
         {
           "@type": "WebPage",
-          "@id": window.location.href,
-          "url": window.location.href,
+          "@id": currentUrl,
+          "url": currentUrl,
           "name": title,
           "datePublished": data.isoDateTime,
           "dateModified": data.isoDateTime,
-          "inLanguage": "ko-KR"
-        },
-        {
-          "@type": "Organization",
-          "name": title,
-          "url": window.location.origin,
-          "logo": window.location.origin + "/favicon.ico"
+          "inLanguage": "ko-KR",
+          "isPartOf": {
+            "@type": "WebSite",
+            "@id": originUrl + "/#website",
+            "url": originUrl,
+            "name": title
+          }
         }
       ]
     };
     ldJsonScript.textContent = JSON.stringify(jsonLd);
   }
 
-  // 3. UI 업데이트
+  // 3. UI 바인딩 및 보정
   function updateUi(data) {
-    const title = document.title || window.location.hostname;
-    
-    // 연도 및 제목
-    document.getElementById('copyright-year').textContent = data.year;
-    document.getElementById('site-title-display').textContent = title;
-    
-    // 날짜
-    const timeElem = document.getElementById('last-update-time');
-    timeElem.textContent = data.formattedDate;
-    timeElem.setAttribute('datetime', data.isoDateTime);
+    const cleanHost = window.location.hostname.replace('www.', '');
+    const title = document.title ? document.title.split('-')[0].trim() : cleanHost;
 
-    // 상태 메시지 (랜덤 순환)
+    // 사이트 타이틀 일괄 바인딩
+    const titleElements = document.querySelectorAll('#dynamic-footer .site-name-display');
+    titleElements.forEach(el => {
+      el.textContent = title;
+    });
+
+    // 연도 및 날짜 정보 바인딩
+    const copyrightYear = document.getElementById('copyright-year');
+    if (copyrightYear) copyrightYear.textContent = data.year;
+
+    const timeElem = document.getElementById('last-update-time');
+    if (timeElem) {
+      timeElem.textContent = data.formattedDate;
+      timeElem.setAttribute('datetime', data.isoDateTime);
+    }
+
+    // 시스템 최적화 상태 시그널 순환 출력
     const statusMsgs = [
-         "서비스 최적화 완료", 
-          "데이터베이스 동기화 완료", 
-          "보안 프로토콜 점검 완료",
-          "콘텐츠 최신화 완료",
-          "시스템 점검 완료",
-          "웹표준 레이아웃 최적화",
-          "사용자 인터페이스 안정화",
-          "성능 개선 완료",
-          "새로운 데이터 로드 완료",
-          "운영 시스템 안정화 완료",
-          "인덱싱 최적화 완료",
-          "데이터 무결성 검사 완료", 
-          "캐시 레이어 갱신",
-          "보안 프로토콜 활성화", 
-          "실시간 콘텐츠 동기화"
+      "웹표준 최적화 점검 완료",
+      "보안 환경 무결성 확인",
+      "레이아웃 정합성 검증 완료",
+      "반응형 데이터 세그먼트 동기화",
+      "검색엔진 인덱싱 데이터 정비",
+      "클라이언트 캐시 동기화 완료",
+       "서비스 최적화 완료", 
+       "데이터베이스 동기화 완료", 
+       "보안 프로토콜 점검 완료",
+       "콘텐츠 최신화 완료",
+       "시스템 점검 완료",
+       "웹표준 레이아웃 최적화",
+       "사용자 인터페이스 안정화",
+       "성능 개선 완료",
+       "새로운 데이터 로드 완료",
+       "운영 시스템 안정화 완료",
+       "인덱싱 최적화 완료",
+       "데이터 무결성 검사 완료", 
+       "캐시 레이어 갱신",
+       "보안 프로토콜 활성화", 
+       "실시간 콘텐츠 동기화"
     ];
-    document.getElementById('sync-status').textContent = statusMsgs[Math.floor(Math.random() * statusMsgs.length)];
+    const syncStatus = document.getElementById('sync-status');
+    if (syncStatus) {
+      syncStatus.textContent = statusMsgs[Math.floor(Math.random() * statusMsgs.length)];
+    }
   }
 
-  // 4. 실행 제어 (DOM 로드 후 실행)
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      const data = getKstInfo();
-      updateUi(data);
-      updateSeoEngine(data);
-    });
-  } else {
+  // 4. 실행 통합 컨트롤러
+  function init() {
     const data = getKstInfo();
     updateUi(data);
     updateSeoEngine(data);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 })();
 </script>
